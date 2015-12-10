@@ -1,0 +1,1828 @@
+{
+"CITY":[
+  {
+    "city_name":"Alegrete",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSLT",
+    "city_initials":"ALQ",
+    "airport_name":"Gaudêncio Machado Ramos Airport",
+    "_id":0
+  },
+  {
+    "city_name":"Alta Floresta",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SBAT",
+    "city_initials":"AFL",
+    "airport_name":"Piloto Oswaldo Marques Dias Airport",
+    "_id":1
+  },
+  {
+    "city_name":"Altamira",
+    "state_name":"Pará",
+    "airport_initials":"SBHT",
+    "city_initials":"ATM",
+    "airport_name":"Altamira Airport",
+    "_id":2
+  },
+  {
+    "city_name":"Anápolis",
+    "state_name":"Goiás",
+    "airport_initials":"SWNS",
+    "city_initials":"APS",
+    "airport_name":"Anápolis Airport",
+    "_id":3
+  },
+  {
+    "city_name":"Apucarana",
+    "state_name":"Paraná",
+    "airport_initials":"SSAP",
+    "city_initials":"APU",
+    "airport_name":"Capt. João Busse Airport",
+    "_id":4
+  },
+  {
+    "city_name":"Aracaju",
+    "state_name":"Sergipe",
+    "airport_initials":"SBAR",
+    "city_initials":"AJU",
+    "airport_name":"Santa Maria Airport",
+    "_id":5
+  },
+  {
+    "city_name":"Aracati",
+    "state_name":"Ceará",
+    "airport_initials":"SNAT",
+    "city_initials":"ARA",
+    "airport_name":"Dragão do Mar Airport",
+    "_id":6
+  },
+  {
+    "city_name":"Araçatuba",
+    "state_name":"São Paulo",
+    "airport_initials":"SBAU",
+    "city_initials":"ARU",
+    "airport_name":"Dario Guarita Airport",
+    "_id":7
+  },
+  {
+    "city_name":"Araguaína",
+    "state_name":"Tocantins",
+    "airport_initials":"SWGN",
+    "city_initials":"AUX",
+    "airport_name":"Araguaína Airport",
+    "_id":8
+  },
+  {
+    "city_name":"Arapongas",
+    "state_name":"Paraná",
+    "airport_initials":"SSOG",
+    "city_initials":"APX",
+    "airport_name":"Alberto Bertelli Airport",
+    "_id":9
+  },
+  {
+    "city_name":"Arapoti",
+    "state_name":"Paraná",
+    "airport_initials":"SSYA",
+    "city_initials":"AAG",
+    "airport_name":"Avelino Vieira Airport",
+    "_id":10
+  },
+  {
+    "city_name":"Araraquara",
+    "state_name":"São Paulo",
+    "airport_initials":"SBAQ",
+    "city_initials":"AQA",
+    "airport_name":"Bartolomeu de Gusmão Airport",
+    "_id":11
+  },
+  {
+    "city_name":"Araxá",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBAX",
+    "city_initials":"AAX",
+    "airport_name":"Araxá Airport",
+    "_id":12
+  },
+  {
+    "city_name":"Aripuanã",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWRP",
+    "city_initials":"ARI",
+    "airport_name":"Aripuanã Airport",
+    "_id":13
+  },
+  {
+    "city_name":"Armação dos Búzios",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBBZ",
+    "city_initials":"BZC",
+    "airport_name":"Umberto Modiano Airport",
+    "_id":14
+  },
+  {
+    "city_name":"Arraias",
+    "state_name":"Tocantins",
+    "airport_initials":"SWRA",
+    "city_initials":"AAI",
+    "airport_name":"Arraias Airport",
+    "_id":15
+  },
+  {
+    "city_name":"Assis",
+    "state_name":"São Paulo",
+    "airport_initials":"SNAX",
+    "city_initials":"AIF",
+    "airport_name":"Marcelo Pires Halzhausen Airport",
+    "_id":16
+  },
+  {
+    "city_name":"Avaré / Arandu",
+    "state_name":"São Paulo",
+    "airport_initials":"SDRR",
+    "city_initials":"AVA",
+    "airport_name":"Comte. Luiz Gonzaga Luth Airport",
+    "_id":17
+  },
+  {
+    "city_name":"Bagé",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBBG",
+    "city_initials":"BGX",
+    "airport_name":"Comte. Gustavo Kraemer Airport",
+    "_id":18
+  },
+  {
+    "city_name":"Barcelos",
+    "state_name":"Amazonas",
+    "airport_initials":"SWBC",
+    "city_initials":"BAZ",
+    "airport_name":"Barcelos Airport",
+    "_id":19
+  },
+  {
+    "city_name":"Barra",
+    "state_name":"Bahia",
+    "airport_initials":"SNBX",
+    "city_initials":"BQQ",
+    "airport_name":"Barra Airport",
+    "_id":20
+  },
+  {
+    "city_name":"Barra do Garças",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SBBW",
+    "city_initials":"BPG",
+    "airport_name":"Barra do Garças Airport",
+    "_id":21
+  },
+  {
+    "city_name":"Barreiras",
+    "state_name":"Bahia",
+    "airport_initials":"SNBR",
+    "city_initials":"BRA",
+    "airport_name":"Barreiras Airport",
+    "_id":22
+  },
+  {
+    "city_name":"Barreirinha",
+    "state_name":"Amazonas",
+    "airport_initials":"SWBI",
+    "city_initials":"BAR",
+    "airport_name":"Barreirinha Airport",
+    "_id":23
+  },
+  {
+    "city_name":"Barreirinhas",
+    "state_name":"Maranhão",
+    "airport_initials":"SBRR",
+    "city_initials":"BRB",
+    "airport_name":"Barreirinhas Airport",
+    "_id":24
+  },
+  {
+    "city_name":"Barretos",
+    "state_name":"São Paulo",
+    "airport_initials":"SNBA",
+    "city_initials":"BAT",
+    "airport_name":"Chafei Amsei Airport",
+    "_id":25
+  },
+  {
+    "city_name":"Bauru",
+    "state_name":"São Paulo",
+    "airport_initials":"SBBU",
+    "city_initials":"BAU",
+    "airport_name":"Bauru Airport",
+    "_id":26
+  },
+  {
+    "city_name":"Bauru / Arealva",
+    "state_name":"São Paulo",
+    "airport_initials":"SBAE",
+    "city_initials":"JTC",
+    "airport_name":"Moussa Nakhl Tobias Airport",
+    "_id":27
+  },
+  {
+    "city_name":"Belém",
+    "state_name":"Pará",
+    "airport_initials":"SBJC",
+    "city_initials":"BEL",
+    "airport_name":"Brig. Protásio de Oliveira Airport (Júlio César)",
+    "_id":28
+  },
+  {
+    "city_name":"Belém",
+    "state_name":"Pará",
+    "airport_initials":"SBBE",
+    "city_initials":"BEL",
+    "airport_name":"Val de Cans-Júlio Cezar Ribeiro International Airport",
+    "_id":29
+  },
+  {
+    "city_name":"Belo Horizonte",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBPR",
+    "city_initials":"BH",
+    "airport_name":"Carlos Prates Airport",
+    "_id":30
+  },
+  {
+    "city_name":"Belo Horizonte",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBBH",
+    "city_initials":"PLU",
+    "airport_name":"Pampulha-Carlos Drummond de Andrade Airport",
+    "_id":31
+  },
+  {
+    "city_name":"Belo Horizonte / Confins",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBCF",
+    "city_initials":"CNF",
+    "airport_name":"Tancredo Neves International Airport",
+    "_id":32
+  },
+  {
+    "city_name":"Boa Vista",
+    "state_name":"Roraima",
+    "airport_initials":"SBBV",
+    "city_initials":"BVB",
+    "airport_name":"Atlas Brasil Cantanhede International Airport",
+    "_id":33
+  },
+  {
+    "city_name":"Bom Jesus da Lapa",
+    "state_name":"Bahia",
+    "airport_initials":"SBLP",
+    "city_initials":"LAZ",
+    "airport_name":"Bom Jesus da Lapa Airport",
+    "_id":34
+  },
+  {
+    "city_name":"Bonito",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SBDB",
+    "city_initials":"BYO",
+    "airport_name":"Bonito Airport",
+    "_id":35
+  },
+  {
+    "city_name":"Borba",
+    "state_name":"Amazonas",
+    "airport_initials":"SWBR",
+    "city_initials":"RBB",
+    "airport_name":"Borba Airport",
+    "_id":36
+  },
+  {
+    "city_name":"Bragança Paulista",
+    "state_name":"São Paulo",
+    "airport_initials":"SDBP",
+    "city_initials":"BJP",
+    "airport_name":"Arthur Siqueira Airport",
+    "_id":37
+  },
+  {
+    "city_name":"Brasília",
+    "state_name":"Federal District",
+    "airport_initials":"SBBR",
+    "city_initials":"BSB",
+    "airport_name":"Pres. Juscelino Kubitschek International Airport",
+    "_id":38
+  },
+  {
+    "city_name":"Cabo Frio",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBCB",
+    "city_initials":"CFB",
+    "airport_name":"Cabo Frio International Airport",
+    "_id":39
+  },
+  {
+    "city_name":"Caçador",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBCD",
+    "city_initials":"CFC",
+    "airport_name":"Carlos Alberto da Costa Neves Airport",
+    "_id":40
+  },
+  {
+    "city_name":"Cachoeiro de Itapemirim",
+    "state_name":"Espírito Santo",
+    "airport_initials":"SNKI",
+    "city_initials":"CDI",
+    "airport_name":"Raimundo de Andrade Airport",
+    "_id":41
+  },
+  {
+    "city_name":"Cacoal",
+    "state_name":"Rondônia",
+    "airport_initials":"SSKW",
+    "city_initials":"OAL",
+    "airport_name":"Capital do Café Airport",
+    "_id":42
+  },
+  {
+    "city_name":"Caldas Novas",
+    "state_name":"Goiás",
+    "airport_initials":"SBCN",
+    "city_initials":"CLV",
+    "airport_name":"Nelson Ribeiro Guimarães Airport",
+    "_id":43
+  },
+  {
+    "city_name":"Campina Grande",
+    "state_name":"Paraíba",
+    "airport_initials":"SBKG",
+    "city_initials":"CPV",
+    "airport_name":"Pres. João Suassuna Airport",
+    "_id":44
+  },
+  {
+    "city_name":"Campinas",
+    "state_name":"São Paulo",
+    "airport_initials":"SDAM",
+    "city_initials":"CAM",
+    "airport_name":"Campo dos Amarais Airport",
+    "_id":45
+  },
+  {
+    "city_name":"Campinas",
+    "state_name":"São Paulo",
+    "airport_initials":"SBKP",
+    "city_initials":"VCP",
+    "airport_name":"Viracopos International Airport",
+    "_id":46
+  },
+  {
+    "city_name":"Campo Grande",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SBCG",
+    "city_initials":"CGR",
+    "airport_name":"Campo Grande International Airport",
+    "_id":47
+  },
+  {
+    "city_name":"Campos dos Goytacazes",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBCP",
+    "city_initials":"CAW",
+    "airport_name":"Bartolomeu Lysandro Airport",
+    "_id":48
+  },
+  {
+    "city_name":"Carajás (Parauapebas)",
+    "state_name":"Pará",
+    "airport_initials":"SBCJ",
+    "city_initials":"CKS",
+    "airport_name":"Carajás Airport",
+    "_id":49
+  },
+  {
+    "city_name":"Carauari",
+    "state_name":"Amazonas",
+    "airport_initials":"SWCA",
+    "city_initials":"CAF",
+    "airport_name":"Carauari Airport",
+    "_id":50
+  },
+  {
+    "city_name":"Caravelas",
+    "state_name":"Bahia",
+    "airport_initials":"SBCV",
+    "city_initials":"CRQ",
+    "airport_name":"Caravelas Airport",
+    "_id":51
+  },
+  {
+    "city_name":"Carolina",
+    "state_name":"Maranhão",
+    "airport_initials":"SBCI",
+    "city_initials":"CLN",
+    "airport_name":"Carolina Airport",
+    "_id":52
+  },
+  {
+    "city_name":"Caruaru",
+    "state_name":"Pernambuco",
+    "airport_initials":"SNRU",
+    "city_initials":"CAU",
+    "airport_name":"Oscar Laranjeiras Airport",
+    "_id":53
+  },
+  {
+    "city_name":"Cascavel",
+    "state_name":"Paraná",
+    "airport_initials":"SBCA",
+    "city_initials":"CAC",
+    "airport_name":"Adalberto Mendes da Silva Airport",
+    "_id":54
+  },
+  {
+    "city_name":"Caxias do Sul",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBCX",
+    "city_initials":"CXJ",
+    "airport_name":"Hugo Cantergiani Regional Airport (Campo dos Bugres)",
+    "_id":55
+  },
+  {
+    "city_name":"Chapecó",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBCH",
+    "city_initials":"XAP",
+    "airport_name":"Serafin Enoss Bertaso Airport",
+    "_id":56
+  },
+  {
+    "city_name":"Cianorte",
+    "state_name":"Paraná",
+    "airport_initials":"SSCT",
+    "city_initials":"CIA",
+    "airport_name":"Gastão Mesquita Airport",
+    "_id":57
+  },
+  {
+    "city_name":"Coari",
+    "state_name":"Amazonas",
+    "airport_initials":"SWKO",
+    "city_initials":"CIZ",
+    "airport_name":"Coari Airport",
+    "_id":58
+  },
+  {
+    "city_name":"Conceição do Araguaia",
+    "state_name":"Pará",
+    "airport_initials":"SBAA",
+    "city_initials":"CDJ",
+    "airport_name":"Conceição do Araguaia Airport",
+    "_id":59
+  },
+  {
+    "city_name":"Concórdia",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SSCK",
+    "city_initials":"CCI",
+    "airport_name":"Olavo Cecco Rigon Airport",
+    "_id":60
+  },
+  {
+    "city_name":"Confresa",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWKF",
+    "city_initials":"CFO",
+    "airport_name":"Confresa Airport",
+    "_id":61
+  },
+  {
+    "city_name":"Conselheiro Lafaiete",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNKF",
+    "city_initials":"QDF",
+    "airport_name":"Conselheiro Lafaiete Airport",
+    "_id":62
+  },
+  {
+    "city_name":"Cornélio Procópio",
+    "state_name":"Paraná",
+    "airport_initials":"SSCP",
+    "city_initials":"COR",
+    "airport_name":"Francisco Lacerda Júnior Airport",
+    "_id":63
+  },
+  {
+    "city_name":"Corumbá",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SBCR",
+    "city_initials":"CMG",
+    "airport_name":"Corumbá International Airport",
+    "_id":64
+  },
+  {
+    "city_name":"Criciúma / Forquilhinha",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBCM",
+    "city_initials":"CCM",
+    "airport_name":"Diomício Freitas Airport",
+    "_id":65
+  },
+  {
+    "city_name":"Cruzeiro do Sul",
+    "state_name":"Acre",
+    "airport_initials":"SBCZ",
+    "city_initials":"CZS",
+    "airport_name":"Cruzeiro do Sul International Airport",
+    "_id":66
+  },
+  {
+    "city_name":"Cuiabá / Várzea Grande",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SBCY",
+    "city_initials":"CGB",
+    "airport_name":"Mal. Rondon International Airport",
+    "_id":67
+  },
+  {
+    "city_name":"Curitiba",
+    "state_name":"Paraná",
+    "airport_initials":"SBBI",
+    "city_initials":"BFH",
+    "airport_name":"Bacacheri Airport",
+    "_id":68
+  },
+  {
+    "city_name":"Curitiba / São José dos Pinhais",
+    "state_name":"Paraná",
+    "airport_initials":"SBCT",
+    "city_initials":"CWB",
+    "airport_name":"Afonso Pena International Airport",
+    "_id":69
+  },
+  {
+    "city_name":"Diamantina",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNDT",
+    "city_initials":"DTI",
+    "airport_name":"Diamantina Airport",
+    "_id":70
+  },
+  {
+    "city_name":"Divinópolis",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNDV",
+    "city_initials":"DIQ",
+    "airport_name":"Brig. Cabral Airport",
+    "_id":71
+  },
+  {
+    "city_name":"Dourados",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SBDO",
+    "city_initials":"DOU",
+    "airport_name":"Francisco de Matos Pereira Airport",
+    "_id":72
+  },
+  {
+    "city_name":"Eirunepé",
+    "state_name":"Amazonas",
+    "airport_initials":"SWEI",
+    "city_initials":"ERN",
+    "airport_name":"Amaury Feitosa Tomaz Airport",
+    "_id":73
+  },
+  {
+    "city_name":"Erechim",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSER",
+    "city_initials":"ERM",
+    "airport_name":"Erechim Airport",
+    "_id":74
+  },
+  {
+    "city_name":"Feijó",
+    "state_name":"Acre",
+    "airport_initials":"SNOU",
+    "city_initials":"FEJ",
+    "airport_name":"Feijó Airport",
+    "_id":75
+  },
+  {
+    "city_name":"Feira de Santana",
+    "state_name":"Bahia",
+    "airport_initials":"SNJD",
+    "city_initials":"FEC",
+    "airport_name":"João Durval Carneiro Airport",
+    "_id":76
+  },
+  {
+    "city_name":"Fernando de Noronha",
+    "state_name":"Pernambuco",
+    "airport_initials":"SBFN",
+    "city_initials":"FEN",
+    "airport_name":"Fernando de Noronha Airport",
+    "_id":77
+  },
+  {
+    "city_name":"Florianópolis",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBFL",
+    "city_initials":"FLN",
+    "airport_name":"Florianópolis International Airport (Hercílio Luz)",
+    "_id":78
+  },
+  {
+    "city_name":"Fonte Boa",
+    "state_name":"Amazonas",
+    "airport_initials":"SWOB",
+    "city_initials":"FBA",
+    "airport_name":"Fonte Boa Airport",
+    "_id":79
+  },
+  {
+    "city_name":"Fortaleza",
+    "state_name":"Ceará",
+    "airport_initials":"SBFZ",
+    "city_initials":"FOR",
+    "airport_name":"Pinto Martins – Fortaleza International Airport",
+    "_id":80
+  },
+  {
+    "city_name":"Foz do Iguaçu",
+    "state_name":"Paraná",
+    "airport_initials":"SBFI",
+    "city_initials":"IGU",
+    "airport_name":"Cataratas International Airport",
+    "_id":81
+  },
+  {
+    "city_name":"Franca",
+    "state_name":"São Paulo",
+    "airport_initials":"SIMK",
+    "city_initials":"FRC",
+    "airport_name":"Ten. Lund Presotto Airport",
+    "_id":82
+  },
+  {
+    "city_name":"Francisco Beltrão",
+    "state_name":"Paraná",
+    "airport_initials":"SSFB",
+    "city_initials":"FBE",
+    "airport_name":"Paulo Abdala Airport",
+    "_id":83
+  },
+  {
+    "city_name":"Gavião Peixoto",
+    "state_name":"São Paulo",
+    "airport_initials":"SBGP",
+    "city_initials":"GP",
+    "airport_name":"Gavião Peixoto Aerodrome",
+    "_id":84
+  },
+  {
+    "city_name":"Goiânia",
+    "state_name":"Goiás",
+    "airport_initials":"SWNV",
+    "city_initials":"GO",
+    "airport_name":"Aeródromo Nacional de Aviação",
+    "_id":85
+  },
+  {
+    "city_name":"Goiânia",
+    "state_name":"Goiás",
+    "airport_initials":"SBGO",
+    "city_initials":"GYN",
+    "airport_name":"Santa Genoveva Airport",
+    "_id":86
+  },
+  {
+    "city_name":"Governador Valadares",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBGV",
+    "city_initials":"GVR",
+    "airport_name":"Cel. Altino Machado de Oliveira Airport",
+    "_id":87
+  },
+  {
+    "city_name":"Guaíra",
+    "state_name":"Paraná",
+    "airport_initials":"SSGY",
+    "city_initials":"GPA",
+    "airport_name":"Guaíra Airport",
+    "_id":88
+  },
+  {
+    "city_name":"Guanambi",
+    "state_name":"Bahia",
+    "airport_initials":"SNGI",
+    "city_initials":"GNM",
+    "airport_name":"Guanambi Airport",
+    "_id":89
+  },
+  {
+    "city_name":"Guarapuava",
+    "state_name":"Paraná",
+    "airport_initials":"SBGU",
+    "city_initials":"GPB",
+    "airport_name":"Tancredo Thomas de Faria Airport",
+    "_id":90
+  },
+  {
+    "city_name":"Guaratinguetá",
+    "state_name":"São Paulo",
+    "airport_initials":"SBGW",
+    "city_initials":"GUJ",
+    "airport_name":"Guaratinguetá Airport",
+    "_id":91
+  },
+  {
+    "city_name":"Gurupi",
+    "state_name":"Tocantins",
+    "airport_initials":"SWGI",
+    "city_initials":"GRP",
+    "airport_name":"Gurupi Airport",
+    "_id":92
+  },
+  {
+    "city_name":"Humaitá",
+    "state_name":"Amazonas",
+    "airport_initials":"SWHT",
+    "city_initials":"HUW",
+    "airport_name":"Francisco Correa da Cruz Airport",
+    "_id":93
+  },
+  {
+    "city_name":"Ijuí",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSIJ",
+    "city_initials":"IJU",
+    "airport_name":"João Batista Bos Filho Airport",
+    "_id":94
+  },
+  {
+    "city_name":"Ilhéus",
+    "state_name":"Bahia",
+    "airport_initials":"SBIL",
+    "city_initials":"IOS",
+    "airport_name":"Jorge Amado Airport",
+    "_id":95
+  },
+  {
+    "city_name":"Imperatriz",
+    "state_name":"Maranhão",
+    "airport_initials":"SBIZ",
+    "city_initials":"IMP",
+    "airport_name":"Pref. Renato Moreira Airport",
+    "_id":96
+  },
+  {
+    "city_name":"Ipatinga / Santana do Paraíso",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBIP",
+    "city_initials":"IPN",
+    "airport_name":"Usiminas Airport",
+    "_id":97
+  },
+  {
+    "city_name":"Itaituba",
+    "state_name":"Pará",
+    "airport_initials":"SBIH",
+    "city_initials":"ITB",
+    "airport_name":"Itaituba Airport",
+    "_id":98
+  },
+  {
+    "city_name":"Itumbiara",
+    "state_name":"Goiás",
+    "airport_initials":"SBIT",
+    "city_initials":"ITR",
+    "airport_name":"Francisco Vilela do Amaral Airport",
+    "_id":99
+  },
+  {
+    "city_name":"Jaguaruna",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBJA",
+    "city_initials":"JJG",
+    "airport_name":"Humberto Ghizzo Bortoluzzi Regional Airport",
+    "_id":100
+  },
+  {
+    "city_name":"Januária",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNJN",
+    "city_initials":"JNA",
+    "airport_name":"Januária Airport",
+    "_id":101
+  },
+  {
+    "city_name":"Ji-Paraná",
+    "state_name":"Rondônia",
+    "airport_initials":"SBJI",
+    "city_initials":"JPR",
+    "airport_name":"José Coleto Airport",
+    "_id":102
+  },
+  {
+    "city_name":"Joaçaba",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SSJA",
+    "city_initials":"JCB",
+    "airport_name":"Santa Terezinha Airport",
+    "_id":103
+  },
+  {
+    "city_name":"João Pessoa / Bayeux",
+    "state_name":"Paraíba",
+    "airport_initials":"SBJP",
+    "city_initials":"JPA",
+    "airport_name":"Pres. Castro Pinto International Airport",
+    "_id":104
+  },
+  {
+    "city_name":"Joinville",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBJV",
+    "city_initials":"JOI",
+    "airport_name":"Lauro Carneiro de Loyola Airport",
+    "_id":105
+  },
+  {
+    "city_name":"Juara",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SIZX",
+    "city_initials":"JUA",
+    "airport_name":"Inácio Luís do Nascimento Airport",
+    "_id":106
+  },
+  {
+    "city_name":"Juazeiro do Norte",
+    "state_name":"Ceará",
+    "airport_initials":"SBJU",
+    "city_initials":"JDO",
+    "airport_name":"Orlando Bezerra de Menezes Airport",
+    "_id":107
+  },
+  {
+    "city_name":"Juína",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWJN",
+    "city_initials":"JIA",
+    "airport_name":"Juína Airport",
+    "_id":108
+  },
+  {
+    "city_name":"Juiz de Fora",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBJF",
+    "city_initials":"JDF",
+    "airport_name":"Francisco Álvares de Assis Airport",
+    "_id":109
+  },
+  {
+    "city_name":"Juiz de Fora / Goianá",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBZM",
+    "city_initials":"IZA",
+    "airport_name":"Pres. Itamar Franco Airport (Zona da Mata)",
+    "_id":110
+  },
+  {
+    "city_name":"Jundiaí",
+    "state_name":"São Paulo",
+    "airport_initials":"SBJD",
+    "city_initials":"JUN",
+    "airport_name":"Comte. Rodolfo Rolim Amaro Airport",
+    "_id":111
+  },
+  {
+    "city_name":"Juruena",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWJU",
+    "city_initials":"JRN",
+    "airport_name":"Juruena Airport",
+    "_id":112
+  },
+  {
+    "city_name":"Lábrea",
+    "state_name":"Amazonas",
+    "airport_initials":"SWLB",
+    "city_initials":"LBR",
+    "airport_name":"Lábrea Airport",
+    "_id":113
+  },
+  {
+    "city_name":"Lages",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBLJ",
+    "city_initials":"LAJ",
+    "airport_name":"Antônio Correia Pinto de Macedo Airport",
+    "_id":114
+  },
+  {
+    "city_name":"Lençóis",
+    "state_name":"Bahia",
+    "airport_initials":"SBLE",
+    "city_initials":"LEC",
+    "airport_name":"Cel. Horácio de Mattos Airport",
+    "_id":115
+  },
+  {
+    "city_name":"Lins",
+    "state_name":"São Paulo",
+    "airport_initials":"SBLN",
+    "city_initials":"LIP",
+    "airport_name":"Gov. Lucas Nogueira Garcez Airport",
+    "_id":116
+  },
+  {
+    "city_name":"Londrina",
+    "state_name":"Paraná",
+    "airport_initials":"SBLO",
+    "city_initials":"LDB",
+    "airport_name":"Gov. José Richa Airport",
+    "_id":117
+  },
+  {
+    "city_name":"Lucas do Rio Verde",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SILC",
+    "city_initials":"LVR",
+    "airport_name":"Bom Futuro Airport",
+    "_id":118
+  },
+  {
+    "city_name":"Macaé",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBME",
+    "city_initials":"MEA",
+    "airport_name":"Benedito Lacerda Airport",
+    "_id":119
+  },
+  {
+    "city_name":"Macapá",
+    "state_name":"Amapá",
+    "airport_initials":"SBMQ",
+    "city_initials":"MCP",
+    "airport_name":"Alberto Alcolumbre International Airport",
+    "_id":120
+  },
+  {
+    "city_name":"Maceió",
+    "state_name":"Alagoas",
+    "airport_initials":"SBMO",
+    "city_initials":"MCZ",
+    "airport_name":"Zumbi dos Palmares International Airport (Palmares)",
+    "_id":121
+  },
+  {
+    "city_name":"Manaus",
+    "state_name":"Amazonas",
+    "airport_initials":"SBEG",
+    "city_initials":"MAO",
+    "airport_name":"Brig. Eduardo Gomes International Airport",
+    "_id":122
+  },
+  {
+    "city_name":"Manicoré",
+    "state_name":"Amazonas",
+    "airport_initials":"SBMY",
+    "city_initials":"MNX",
+    "airport_name":"Manicoré Airport",
+    "_id":123
+  },
+  {
+    "city_name":"Marabá",
+    "state_name":"Pará",
+    "airport_initials":"SBMA",
+    "city_initials":"MAB",
+    "airport_name":"João Correa da Rocha Airport",
+    "_id":124
+  },
+  {
+    "city_name":"Maricá",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SDMC",
+    "city_initials":"MAR",
+    "airport_name":"Maricá Airport",
+    "_id":125
+  },
+  {
+    "city_name":"Marília",
+    "state_name":"São Paulo",
+    "airport_initials":"SBML",
+    "city_initials":"MII",
+    "airport_name":"Frank Miloye Milenkowichi Airport",
+    "_id":126
+  },
+  {
+    "city_name":"Maringá",
+    "state_name":"Paraná",
+    "airport_initials":"SBMG",
+    "city_initials":"MGF",
+    "airport_name":"Sílvio Name Júnior Regional Airport",
+    "_id":127
+  },
+  {
+    "city_name":"Matupá",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWXM",
+    "city_initials":"MBK",
+    "airport_name":"Orlando Villas-Bôas Regional Airport",
+    "_id":128
+  },
+  {
+    "city_name":"Maués",
+    "state_name":"Amazonas",
+    "airport_initials":"SWMW",
+    "city_initials":"MBZ",
+    "airport_name":"Maués Airport",
+    "_id":129
+  },
+  {
+    "city_name":"Minaçu",
+    "state_name":"Goiás",
+    "airport_initials":"SWIQ",
+    "city_initials":"MQH",
+    "airport_name":"Minaçu Airport",
+    "_id":130
+  },
+  {
+    "city_name":"Monte Dourado (Almeirim)",
+    "state_name":"Pará",
+    "airport_initials":"SBMD",
+    "city_initials":"MEU",
+    "airport_name":"Serra do Areão Airport",
+    "_id":131
+  },
+  {
+    "city_name":"Montes Claros",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBMK",
+    "city_initials":"MOC",
+    "airport_name":"Mário Ribeiro Airport",
+    "_id":132
+  },
+  {
+    "city_name":"Mossoró",
+    "state_name":"Rio Grande do Norte",
+    "airport_initials":"SBMS",
+    "city_initials":"MVF",
+    "airport_name":"Gov. Dix-Sept Rosado Airport",
+    "_id":133
+  },
+  {
+    "city_name":"Natal / São Gonçalo do Amarante",
+    "state_name":"Rio Grande do Norte",
+    "airport_initials":"SBSG",
+    "city_initials":"NAT",
+    "airport_name":"Gov. Aluízio Alves International Airport",
+    "_id":134
+  },
+  {
+    "city_name":"Navegantes",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SBNF",
+    "city_initials":"NVT",
+    "airport_name":"Min. Victor Konder International Airport",
+    "_id":135
+  },
+  {
+    "city_name":"Novo Progresso",
+    "state_name":"Pará",
+    "airport_initials":"SJNP",
+    "city_initials":"NPR",
+    "airport_name":"Novo Progresso Airport",
+    "_id":136
+  },
+  {
+    "city_name":"Oeiras",
+    "state_name":"Piauí",
+    "airport_initials":"SNOE",
+    "city_initials":"OEI",
+    "airport_name":"Oeiras Airport",
+    "_id":137
+  },
+  {
+    "city_name":"Oiapoque",
+    "state_name":"Amapá",
+    "airport_initials":"SBOI",
+    "city_initials":"OYK",
+    "airport_name":"Oiapoque Airport",
+    "_id":138
+  },
+  {
+    "city_name":"Oriximiná",
+    "state_name":"Pará",
+    "airport_initials":"SNOX",
+    "city_initials":"ORX",
+    "airport_name":"Oriximiná Airport",
+    "_id":139
+  },
+  {
+    "city_name":"Ourilândia do Norte",
+    "state_name":"Pará",
+    "airport_initials":"SDOW",
+    "city_initials":"OIA",
+    "airport_name":"Ourilândia do Norte Airport",
+    "_id":140
+  },
+  {
+    "city_name":"Ourinhos",
+    "state_name":"São Paulo",
+    "airport_initials":"SDOU",
+    "city_initials":"OUS",
+    "airport_name":"Jornalista Benedito Pimentel Airport",
+    "_id":141
+  },
+  {
+    "city_name":"Palmas",
+    "state_name":"Tocantins",
+    "airport_initials":"SBPJ",
+    "city_initials":"PMW",
+    "airport_name":"Brig. Lysias Rodrigues Airport",
+    "_id":142
+  },
+  {
+    "city_name":"Paranaguá",
+    "state_name":"Paraná",
+    "airport_initials":"SSPG",
+    "city_initials":"PNG",
+    "airport_name":"Santos Dumont Airport",
+    "_id":143
+  },
+  {
+    "city_name":"Paranavaí",
+    "state_name":"Paraná",
+    "airport_initials":"SSPI",
+    "city_initials":"PVI",
+    "airport_name":"Edu Chaves Airport",
+    "_id":144
+  },
+  {
+    "city_name":"Parintins",
+    "state_name":"Amazonas",
+    "airport_initials":"SWPI",
+    "city_initials":"PIN",
+    "airport_name":"Júlio Belém Airport",
+    "_id":145
+  },
+  {
+    "city_name":"Parnaíba",
+    "state_name":"Piauí",
+    "airport_initials":"SBPB",
+    "city_initials":"PHB",
+    "airport_name":"Pref. Dr. João Silva Filho International Airport",
+    "_id":146
+  },
+  {
+    "city_name":"Passo Fundo",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBPF",
+    "city_initials":"PFB",
+    "airport_name":"Lauro Kurtz Airport",
+    "_id":147
+  },
+  {
+    "city_name":"Pato Branco",
+    "state_name":"Paraná",
+    "airport_initials":"SSPB",
+    "city_initials":"PTO",
+    "airport_name":"Juvenal Loureiro Cardoso Airport",
+    "_id":148
+  },
+  {
+    "city_name":"Patos de Minas",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNPD",
+    "city_initials":"POJ",
+    "airport_name":"Pedro Pereira dos Santos Airport",
+    "_id":149
+  },
+  {
+    "city_name":"Paulo Afonso",
+    "state_name":"Bahia",
+    "airport_initials":"SBUF",
+    "city_initials":"PAV",
+    "airport_name":"Paulo Afonso Airport",
+    "_id":150
+  },
+  {
+    "city_name":"Pelotas",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBPK",
+    "city_initials":"PET",
+    "airport_name":"João Simões Lopes Neto International Airport",
+    "_id":151
+  },
+  {
+    "city_name":"Petrolina",
+    "state_name":"Pernambuco",
+    "airport_initials":"SBPL",
+    "city_initials":"PNZ",
+    "airport_name":"Sen. Nilo Coelho Airport",
+    "_id":152
+  },
+  {
+    "city_name":"Poços de Caldas",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBPC",
+    "city_initials":"POO",
+    "airport_name":"Emb. Walther Moreira Salles Airport",
+    "_id":153
+  },
+  {
+    "city_name":"Ponta Grossa",
+    "state_name":"Paraná",
+    "airport_initials":"SSZW",
+    "city_initials":"PGZ",
+    "airport_name":"Comte. Antonio Amilton Beraldo Airport",
+    "_id":154
+  },
+  {
+    "city_name":"Ponta Porã",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SBPP",
+    "city_initials":"PMG",
+    "airport_name":"Ponta Porã International Airport",
+    "_id":155
+  },
+  {
+    "city_name":"Porecatu",
+    "state_name":"Paraná",
+    "airport_initials":"SSPK",
+    "city_initials":"POR",
+    "airport_name":"Porecatu Airport",
+    "_id":156
+  },
+  {
+    "city_name":"Porto Alegre",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBPA",
+    "city_initials":"POA",
+    "airport_name":"Salgado Filho International Airport",
+    "_id":157
+  },
+  {
+    "city_name":"Porto Nacional",
+    "state_name":"Tocantins",
+    "airport_initials":"SBPN",
+    "city_initials":"PNB",
+    "airport_name":"Porto Nacional Airport",
+    "_id":158
+  },
+  {
+    "city_name":"Porto Seguro",
+    "state_name":"Bahia",
+    "airport_initials":"SBPS",
+    "city_initials":"BPS",
+    "airport_name":"Porto Seguro Airport",
+    "_id":159
+  },
+  {
+    "city_name":"Porto de Trombetas (Oriximiná)",
+    "state_name":"Pará",
+    "airport_initials":"SBTB",
+    "city_initials":"TMT",
+    "airport_name":"Porto de Trombetas Airport",
+    "_id":160
+  },
+  {
+    "city_name":"Porto Urucu (Coari)",
+    "state_name":"Amazonas",
+    "airport_initials":"SBUY",
+    "city_initials":"PU",
+    "airport_name":"Porto Urucu Airport",
+    "_id":161
+  },
+  {
+    "city_name":"Porto Velho",
+    "state_name":"Rondônia",
+    "airport_initials":"SBPV",
+    "city_initials":"PVH",
+    "airport_name":"Gov. Jorge Teixeira de Oliveira International Airport",
+    "_id":162
+  },
+  {
+    "city_name":"Presidente Prudente",
+    "state_name":"São Paulo",
+    "airport_initials":"SBDN",
+    "city_initials":"PPB",
+    "airport_name":"Presidente Prudente Airport",
+    "_id":163
+  },
+  {
+    "city_name":"Recife",
+    "state_name":"Pernambuco",
+    "airport_initials":"SBRF",
+    "city_initials":"REC",
+    "airport_name":"Guararapes-Gilberto Freyre International Airport",
+    "_id":164
+  },
+  {
+    "city_name":"Redenção",
+    "state_name":"Pará",
+    "airport_initials":"SNDC",
+    "city_initials":"RDC",
+    "airport_name":"Redenção Airport",
+    "_id":165
+  },
+  {
+    "city_name":"Resende",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SDRS",
+    "city_initials":"REZ",
+    "airport_name":"Resende Airport",
+    "_id":166
+  },
+  {
+    "city_name":"Ribeirão Preto",
+    "state_name":"São Paulo",
+    "airport_initials":"SBRP",
+    "city_initials":"RAO",
+    "airport_name":"Dr. Leite Lopes Airport",
+    "_id":167
+  },
+  {
+    "city_name":"Rio Branco",
+    "state_name":"Acre",
+    "airport_initials":"SBRB",
+    "city_initials":"RBR",
+    "airport_name":"Plácido de Castro International Airport",
+    "_id":168
+  },
+  {
+    "city_name":"Rio de Janeiro",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBGL",
+    "city_initials":"GIG",
+    "airport_name":"Galeão-Antonio Carlos Jobim International Airport",
+    "_id":169
+  },
+  {
+    "city_name":"Rio de Janeiro",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBJR",
+    "city_initials":"JAC",
+    "airport_name":"Jacarepaguá-Roberto Marinho Airport",
+    "_id":170
+  },
+  {
+    "city_name":"Rio de Janeiro",
+    "state_name":"Rio de Janeiro",
+    "airport_initials":"SBRJ",
+    "city_initials":"SDU",
+    "airport_name":"Santos Dumont Airport",
+    "_id":171
+  },
+  {
+    "city_name":"Rio Grande",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SJRG",
+    "city_initials":"RIG",
+    "airport_name":"Rio Grande Regional Airport",
+    "_id":172
+  },
+  {
+    "city_name":"Rio Verde",
+    "state_name":"Goiás",
+    "airport_initials":"SWLC",
+    "city_initials":"RVD",
+    "airport_name":"Gal. Leite de Castro Airport",
+    "_id":173
+  },
+  {
+    "city_name":"Rondonópolis",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWRD",
+    "city_initials":"ROO",
+    "airport_name":"Maestro Marinho Franco Airport",
+    "_id":174
+  },
+  {
+    "city_name":"Salvador da Bahia",
+    "state_name":"Bahia",
+    "airport_initials":"SBSV",
+    "city_initials":"SSA",
+    "airport_name":"Dep. Luís Eduardo Magalhães International Airport (2 de Julho)",
+    "_id":175
+  },
+  {
+    "city_name":"Santa Isabel do Rio Negro",
+    "state_name":"Amazonas",
+    "airport_initials":"SWTP",
+    "city_initials":"IRZ",
+    "airport_name":"Tapuruquara Airport",
+    "_id":176
+  },
+  {
+    "city_name":"Santa Maria",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBSM",
+    "city_initials":"RIA",
+    "airport_name":"Santa Maria Airport",
+    "_id":177
+  },
+  {
+    "city_name":"Santa Rosa",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSZR",
+    "city_initials":"SRA",
+    "airport_name":"Luís Alberto Lehr Airport",
+    "_id":178
+  },
+  {
+    "city_name":"Santana do Araguaia",
+    "state_name":"Pará",
+    "airport_initials":"SNKE",
+    "city_initials":"CMP",
+    "airport_name":"Santana do Araguaia Airport",
+    "_id":179
+  },
+  {
+    "city_name":"Santana do Livramento",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSLI",
+    "city_initials":"LVB",
+    "airport_name":"Galpões Airport",
+    "_id":180
+  },
+  {
+    "city_name":"Santarém",
+    "state_name":"Pará",
+    "airport_initials":"SBSN",
+    "city_initials":"STM",
+    "airport_name":"Maestro Wilson Fonseca Airport",
+    "_id":181
+  },
+  {
+    "city_name":"Santiago",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSST",
+    "city_initials":"SA",
+    "airport_name":"Santiago Airport",
+    "_id":182
+  },
+  {
+    "city_name":"Santo Ângelo",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBNM",
+    "city_initials":"GEL",
+    "airport_name":"Sepé Tiaraju Airport",
+    "_id":183
+  },
+  {
+    "city_name":"Santo Antônio do Içá",
+    "state_name":"Amazonas",
+    "airport_initials":"SWII",
+    "city_initials":"IPG",
+    "airport_name":"Ipiranga Airport",
+    "_id":184
+  },
+  {
+    "city_name":"São Borja",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SSSB",
+    "city_initials":"SBA",
+    "airport_name":"São Borja Airport",
+    "_id":185
+  },
+  {
+    "city_name":"São Carlos",
+    "state_name":"São Paulo",
+    "airport_initials":"SDSC",
+    "city_initials":"QSC",
+    "airport_name":"Mário Pereira Lopes Airport",
+    "_id":186
+  },
+  {
+    "city_name":"São Félix do Araguaia",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWFX",
+    "city_initials":"SXO",
+    "airport_name":"São Félix do Araguaia Airport",
+    "_id":187
+  },
+  {
+    "city_name":"São Félix do Xingu",
+    "state_name":"Pará",
+    "airport_initials":"SNFX",
+    "city_initials":"SXX",
+    "airport_name":"São Félix do Xingu Airport",
+    "_id":188
+  },
+  {
+    "city_name":"São Gabriel da Cachoeira",
+    "state_name":"Amazonas",
+    "airport_initials":"SBUA",
+    "city_initials":"SJL",
+    "airport_name":"São Gabriel da Cachoeira Airport",
+    "_id":189
+  },
+  {
+    "city_name":"São João del-Rei",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNJR",
+    "city_initials":"JDR",
+    "airport_name":"Pref. Octávio de Almeida Neves Airport",
+    "_id":190
+  },
+  {
+    "city_name":"São José do Rio Preto",
+    "state_name":"São Paulo",
+    "airport_initials":"SBSR",
+    "city_initials":"SJP",
+    "airport_name":"Prof. Eribelto Manoel Reino Airport",
+    "_id":191
+  },
+  {
+    "city_name":"São José dos Campos",
+    "state_name":"São Paulo",
+    "airport_initials":"SBSJ",
+    "city_initials":"SJK",
+    "airport_name":"Prof. Urbano Ernesto Stumpf Airport",
+    "_id":192
+  },
+  {
+    "city_name":"São Lourenço",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SNLO",
+    "city_initials":"SSO",
+    "airport_name":"São Lourenço Airport",
+    "_id":193
+  },
+  {
+    "city_name":"São Luís",
+    "state_name":"Maranhão",
+    "airport_initials":"SBSL",
+    "city_initials":"SLZ",
+    "airport_name":"Mal. Cunha Machado International Airport (Tirirical)",
+    "_id":194
+  },
+  {
+    "city_name":"São Miguel do Oeste",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SSOE",
+    "city_initials":"SQX",
+    "airport_name":"Hélio Wasum Airport",
+    "_id":195
+  },
+  {
+    "city_name":"São Paulo",
+    "state_name":"São Paulo",
+    "airport_initials":"SBMT",
+    "city_initials":"CM",
+    "airport_name":"Campo de Marte Airport",
+    "_id":196
+  },
+  {
+    "city_name":"São Paulo",
+    "state_name":"São Paulo",
+    "airport_initials":"SBSP",
+    "city_initials":"CGH",
+    "airport_name":"Congonhas Airport",
+    "_id":197
+  },
+  {
+    "city_name":"São Paulo / Guarulhos",
+    "state_name":"São Paulo",
+    "airport_initials":"SBGR",
+    "city_initials":"GRU",
+    "airport_name":"Gov. André Franco Montoro International Airport (Cumbica)",
+    "_id":198
+  },
+  {
+    "city_name":"São Paulo de Olivença",
+    "state_name":"Amazonas",
+    "airport_initials":"SDCG",
+    "city_initials":"OLC",
+    "airport_name":"Sen. Eunice Michiles Airport",
+    "_id":199
+  },
+  {
+    "city_name":"São Pedro",
+    "state_name":"São Paulo",
+    "airport_initials":"SDAE",
+    "city_initials":"SPA",
+    "airport_name":"São Pedro Airport",
+    "_id":200
+  },
+  {
+    "city_name":"Sinop",
+    "state_name":"Mato Grosso",
+    "airport_initials":"SWSI",
+    "city_initials":"OPS",
+    "airport_name":"Presidente João Figueiredo Airport",
+    "_id":201
+  },
+  {
+    "city_name":"Sobral",
+    "state_name":"Ceará",
+    "airport_initials":"SNOB",
+    "city_initials":"QBX",
+    "airport_name":"Sobral Airport",
+    "_id":202
+  },
+  {
+    "city_name":"Sorocaba",
+    "state_name":"São Paulo",
+    "airport_initials":"SDCO",
+    "city_initials":"SOD",
+    "airport_name":"Bertram Luiz Leupolz Airport",
+    "_id":203
+  },
+  {
+    "city_name":"Tabatinga",
+    "state_name":"Amazonas",
+    "airport_initials":"SBTT",
+    "city_initials":"TBT",
+    "airport_name":"Tabatinga International Airport",
+    "_id":204
+  },
+  {
+    "city_name":"Tarauacá",
+    "state_name":"Acre",
+    "airport_initials":"SBTK",
+    "city_initials":"TRQ",
+    "airport_name":"José Galera dos Santos Airport",
+    "_id":205
+  },
+  {
+    "city_name":"Tefé",
+    "state_name":"Amazonas",
+    "airport_initials":"SBTF",
+    "city_initials":"TFF",
+    "airport_name":"Tefé Airport",
+    "_id":206
+  },
+  {
+    "city_name":"Teixeira de Freitas",
+    "state_name":"Bahia",
+    "airport_initials":"SNTF",
+    "city_initials":"TXF",
+    "airport_name":"9 de maio Airport",
+    "_id":207
+  },
+  {
+    "city_name":"Telêmaco Borba",
+    "state_name":"Paraná",
+    "airport_initials":"SBTL",
+    "city_initials":"TEC",
+    "airport_name":"Telêmaco Borba Airport",
+    "_id":208
+  },
+  {
+    "city_name":"Teresina",
+    "state_name":"Piauí",
+    "airport_initials":"SBTE",
+    "city_initials":"THE",
+    "airport_name":"Sen. Petrônio Portella Airport",
+    "_id":209
+  },
+  {
+    "city_name":"Toledo",
+    "state_name":"Paraná",
+    "airport_initials":"SBTD",
+    "city_initials":"TOW",
+    "airport_name":"Luiz dal Canalle Filho Airport",
+    "_id":210
+  },
+  {
+    "city_name":"Três Lagoas",
+    "state_name":"Mato Grosso do Sul",
+    "airport_initials":"SSTL",
+    "city_initials":"TJL",
+    "airport_name":"Plínio Alarcom Airport",
+    "_id":211
+  },
+  {
+    "city_name":"Tucuruí",
+    "state_name":"Pará",
+    "airport_initials":"SBTU",
+    "city_initials":"TUR",
+    "airport_name":"Tucuruí Airport",
+    "_id":212
+  },
+  {
+    "city_name":"Ubatuba",
+    "state_name":"São Paulo",
+    "airport_initials":"SDUB",
+    "city_initials":"UBT",
+    "airport_name":"Gastão Madeira Airport",
+    "_id":213
+  },
+  {
+    "city_name":"Uberaba",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBUR",
+    "city_initials":"UBA",
+    "airport_name":"Mário de Almeida Franco Airport",
+    "_id":214
+  },
+  {
+    "city_name":"Uberlândia",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBUL",
+    "city_initials":"UDI",
+    "airport_name":"Ten. Cel. Av. César Bombonato Airport",
+    "_id":215
+  },
+  {
+    "city_name":"Umuarama",
+    "state_name":"Paraná",
+    "airport_initials":"SSUM",
+    "city_initials":"UMU",
+    "airport_name":"Orlando de Carvalho Airport",
+    "_id":216
+  },
+  {
+    "city_name":"Una",
+    "state_name":"Bahia",
+    "airport_initials":"SBTC",
+    "city_initials":"UNA",
+    "airport_name":"Una-Comandatuba Airport",
+    "_id":217
+  },
+  {
+    "city_name":"União da Vitória",
+    "state_name":"Paraná",
+    "airport_initials":"SSUV",
+    "city_initials":"JCA",
+    "airport_name":"José Cleto Airport",
+    "_id":218
+  },
+  {
+    "city_name":"Uruguaiana",
+    "state_name":"Rio Grande do Sul",
+    "airport_initials":"SBUG",
+    "city_initials":"URG",
+    "airport_name":"Ruben Berta International Airport",
+    "_id":219
+  },
+  {
+    "city_name":"Valença",
+    "state_name":"Bahia",
+    "airport_initials":"SNVB",
+    "city_initials":"VAL",
+    "airport_name":"Valença Airport",
+    "_id":220
+  },
+  {
+    "city_name":"Varginha",
+    "state_name":"Minas Gerais",
+    "airport_initials":"SBVG",
+    "city_initials":"VAG",
+    "airport_name":"Maj. Brig. Trompowsky Airport",
+    "_id":221
+  },
+  {
+    "city_name":"Videira",
+    "state_name":"Santa Catarina",
+    "airport_initials":"SSVI",
+    "city_initials":"VIA",
+    "airport_name":"Ângelo Ponzoni Airport",
+    "_id":222
+  },
+  {
+    "city_name":"Vilhena",
+    "state_name":"Rondônia",
+    "airport_initials":"SBVH",
+    "city_initials":"BVH",
+    "airport_name":"Brig. Camarão Airport",
+    "_id":223
+  },
+  {
+    "city_name":"Vitória",
+    "state_name":"Espírito Santo",
+    "airport_initials":"SBVT",
+    "city_initials":"VIX",
+    "airport_name":"Eurico de Aguiar Salles Airport (Goiabeiras)",
+    "_id":224
+  },
+  {
+    "city_name":"Vitória da Conquista",
+    "state_name":"Bahia",
+    "airport_initials":"SBQV",
+    "city_initials":"VDC",
+    "airport_name":"Pedro Otacílio Figueiredo Airport",
+    "_id":225
+  },
+  {
+    "city_name":"Votuporanga",
+    "state_name":"São Paulo",
+    "airport_initials":"SDVG",
+    "city_initials":"VOT",
+    "airport_name":"Domingos Pignatari Airport",
+    "_id":226
+  },
+  {
+    "city_name":"Xinguara",
+    "state_name":"Pará",
+    "airport_initials":"XMA",
+    "city_initials":"XIG",
+    "airport_name":"Xinguara Municipal Airport",
+    "_id":227
+  }
+]
+}
