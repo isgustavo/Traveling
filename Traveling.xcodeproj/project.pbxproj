@@ -12,11 +12,18 @@
 		727AFB4C1C18926E00BB63B1 /* Traveling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 727AFB4A1C18926E00BB63B1 /* Traveling.xcdatamodeld */; };
 		727AFB4E1C18926E00BB63B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727AFB4D1C18926E00BB63B1 /* Assets.xcassets */; };
 		727AFB511C18926E00BB63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727AFB4F1C18926E00BB63B1 /* LaunchScreen.storyboard */; };
-		727AFB5A1C1895CD00BB63B1 /* AirportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AFB591C1895CD00BB63B1 /* AirportTableViewController.swift */; };
 		727AFB5D1C18965300BB63B1 /* airportsBrazil.json in Resources */ = {isa = PBXBuildFile; fileRef = 727AFB5C1C18965300BB63B1 /* airportsBrazil.json */; };
 		727AFB5F1C1896A700BB63B1 /* AirportsBrazilLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AFB5E1C1896A700BB63B1 /* AirportsBrazilLoad.swift */; };
 		727AFB621C18975600BB63B1 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AFB611C18975600BB63B1 /* Airport.swift */; };
 		727AFB641C18A25100BB63B1 /* ResultAirportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727AFB631C18A25100BB63B1 /* ResultAirportTableViewController.swift */; };
+		72965F161C20730900CEFCF9 /* DepatureAirportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72965F151C20730900CEFCF9 /* DepatureAirportTableViewController.swift */; };
+		72965F181C2077AF00CEFCF9 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72965F171C2077AF00CEFCF9 /* TestViewController.swift */; };
+		72965F1A1C21D2E700CEFCF9 /* ArrivalAirportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72965F191C21D2E700CEFCF9 /* ArrivalAirportTableViewController.swift */; };
+		72965F1C1C21D33800CEFCF9 /* ArrivalResultSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72965F1B1C21D33800CEFCF9 /* ArrivalResultSearchTableViewController.swift */; };
+		72965F1E1C21E29F00CEFCF9 /* FlightTrackNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72965F1D1C21E29F00CEFCF9 /* FlightTrackNumberViewController.swift */; };
+		72CC43E01C1EF1A200465455 /* Flight+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC43DE1C1EF1A200465455 /* Flight+CoreDataProperties.swift */; };
+		72CC43E11C1EF1A200465455 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC43DF1C1EF1A200465455 /* Flight.swift */; };
+		72CC43E31C1F276E00465455 /* DepartureDateHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CC43E21C1F276E00465455 /* DepartureDateHourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +34,18 @@
 		727AFB4D1C18926E00BB63B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727AFB501C18926E00BB63B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		727AFB521C18926E00BB63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		727AFB591C1895CD00BB63B1 /* AirportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportTableViewController.swift; sourceTree = "<group>"; };
 		727AFB5C1C18965300BB63B1 /* airportsBrazil.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airportsBrazil.json; sourceTree = "<group>"; };
 		727AFB5E1C1896A700BB63B1 /* AirportsBrazilLoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportsBrazilLoad.swift; sourceTree = "<group>"; };
 		727AFB611C18975600BB63B1 /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		727AFB631C18A25100BB63B1 /* ResultAirportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultAirportTableViewController.swift; sourceTree = "<group>"; };
+		72965F151C20730900CEFCF9 /* DepatureAirportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepatureAirportTableViewController.swift; sourceTree = "<group>"; };
+		72965F171C2077AF00CEFCF9 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		72965F191C21D2E700CEFCF9 /* ArrivalAirportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalAirportTableViewController.swift; sourceTree = "<group>"; };
+		72965F1B1C21D33800CEFCF9 /* ArrivalResultSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrivalResultSearchTableViewController.swift; sourceTree = "<group>"; };
+		72965F1D1C21E29F00CEFCF9 /* FlightTrackNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightTrackNumberViewController.swift; sourceTree = "<group>"; };
+		72CC43DE1C1EF1A200465455 /* Flight+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Flight+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		72CC43DF1C1EF1A200465455 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		72CC43E21C1F276E00465455 /* DepartureDateHourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureDateHourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +95,13 @@
 		727AFB581C18959800BB63B1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				727AFB591C1895CD00BB63B1 /* AirportTableViewController.swift */,
 				727AFB631C18A25100BB63B1 /* ResultAirportTableViewController.swift */,
+				72CC43E21C1F276E00465455 /* DepartureDateHourViewController.swift */,
+				72965F151C20730900CEFCF9 /* DepatureAirportTableViewController.swift */,
+				72965F191C21D2E700CEFCF9 /* ArrivalAirportTableViewController.swift */,
+				72965F1B1C21D33800CEFCF9 /* ArrivalResultSearchTableViewController.swift */,
+				72965F171C2077AF00CEFCF9 /* TestViewController.swift */,
+				72965F1D1C21E29F00CEFCF9 /* FlightTrackNumberViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -98,6 +117,8 @@
 		727AFB601C18970600BB63B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72CC43DE1C1EF1A200465455 /* Flight+CoreDataProperties.swift */,
+				72CC43DF1C1EF1A200465455 /* Flight.swift */,
 				727AFB611C18975600BB63B1 /* Airport.swift */,
 			);
 			name = Model;
@@ -177,10 +198,17 @@
 			files = (
 				727AFB621C18975600BB63B1 /* Airport.swift in Sources */,
 				727AFB441C18926E00BB63B1 /* AppDelegate.swift in Sources */,
-				727AFB5A1C1895CD00BB63B1 /* AirportTableViewController.swift in Sources */,
+				72CC43E01C1EF1A200465455 /* Flight+CoreDataProperties.swift in Sources */,
+				72CC43E31C1F276E00465455 /* DepartureDateHourViewController.swift in Sources */,
+				72965F181C2077AF00CEFCF9 /* TestViewController.swift in Sources */,
 				727AFB4C1C18926E00BB63B1 /* Traveling.xcdatamodeld in Sources */,
+				72965F1C1C21D33800CEFCF9 /* ArrivalResultSearchTableViewController.swift in Sources */,
+				72CC43E11C1EF1A200465455 /* Flight.swift in Sources */,
+				72965F161C20730900CEFCF9 /* DepatureAirportTableViewController.swift in Sources */,
 				727AFB641C18A25100BB63B1 /* ResultAirportTableViewController.swift in Sources */,
+				72965F1E1C21E29F00CEFCF9 /* FlightTrackNumberViewController.swift in Sources */,
 				727AFB5F1C1896A700BB63B1 /* AirportsBrazilLoad.swift in Sources */,
+				72965F1A1C21D2E700CEFCF9 /* ArrivalAirportTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +356,7 @@
 				727AFB571C18926E00BB63B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
