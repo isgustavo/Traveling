@@ -1,5 +1,5 @@
 //
-//  Flight+CoreDataProperties.swift
+//  Airport+CoreDataProperties.swift
 //  Traveling
 //
 //  Created by Gustavo F Oliveira on 1/5/16.
@@ -12,12 +12,11 @@
 import Foundation
 import CoreData
 
-extension Flight {
+extension Airport {
 
-    @NSManaged var departure_date_hour: NSDate?
-    @NSManaged var track_number: String?
-    @NSManaged var attachment_path: String?
-    @NSManaged var departure_airport: Airport?
-    @NSManaged var arrival_airport: Airport?
+    @NSManaged var city_name: String?
+    @NSManaged var airport_name: String?
+    @NSManaged var airport_initials: String?
+    @NSManaged var state_name: String?
 
 }

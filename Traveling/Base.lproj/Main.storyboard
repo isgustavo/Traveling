@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mn9-o7-gaU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wrL-pm-Htj">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Arrival Airport-->
+        <!--Aeroporto de destino-->
         <scene sceneID="vLc-t9-gfF">
             <objects>
-                <tableViewController storyboardIdentifier="ArrivalAirportTableViewControllerId" title="Arrival Airport" id="Dao-Iw-92z" customClass="ArrivalAirportTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ArrivalAirportTableViewControllerId" title="Aeroporto de destino" id="Dao-Iw-92z" customClass="ArrivalAirportTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ArrivalAirportTableViewControllerId" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="JS3-js-ZcP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,14 +26,14 @@
                                             <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="peK-Hb-yad">
                                             <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -48,7 +48,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ac-56-stN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="-210"/>
+            <point key="canvasLocation" x="2484" y="-91"/>
         </scene>
         <!--Arrival Result Search Table View Controller-->
         <scene sceneID="E8l-4g-9HB">
@@ -70,14 +70,14 @@
                                             <rect key="frame" x="15" y="6" width="31.5" height="19.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rSs-bW-9dR">
                                             <rect key="frame" x="15" y="25.5" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -92,12 +92,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO8-2U-5WT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594" y="-209"/>
+            <point key="canvasLocation" x="3127" y="-91"/>
         </scene>
-        <!--Flight Track Number-->
+        <!--Localizador do voo-->
         <scene sceneID="r3X-FH-Kh8">
             <objects>
-                <viewController storyboardIdentifier="FlightTrackNumberViewControllerId" title="Flight Track Number" id="btr-Jn-aK5" customClass="FlightTrackNumberViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightTrackNumberViewControllerId" title="Localizador do voo" id="btr-Jn-aK5" customClass="FlightTrackNumberViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ot5-jc-LMf"/>
                         <viewControllerLayoutGuide type="bottom" id="wEU-TO-GZK"/>
@@ -108,6 +108,7 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOh-D0-sia">
                                 <rect key="frame" x="180" y="98" width="241" height="60"/>
+                                <color key="backgroundColor" red="0.97089741492146597" green="0.97089741492146597" blue="0.97089741492146597" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
@@ -127,45 +128,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqe-eo-UJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3227" y="140"/>
+            <point key="canvasLocation" x="3783" y="237"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="wCJ-Le-4w4">
-            <objects>
-                <viewController id="J6I-QI-B9f" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fcy-ky-1o0"/>
-                        <viewControllerLayoutGuide type="bottom" id="pQq-gO-0YB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MVh-nX-sCb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjZ-nB-he9">
-                                <rect key="frame" x="227" y="185" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wQo-p5-Sru" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3849" y="141"/>
-        </scene>
-        <!--Departure Airport-->
+        <!--Departure Airport Table View Controller-->
         <scene sceneID="n9o-LN-BSn">
             <objects>
-                <tableViewController id="nuB-KS-lLu" customClass="DepatureAirportTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="DepartureAirportTableViewControllerId" id="nuB-KS-lLu" customClass="DepartureAirportTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yo2-Dc-INf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="airportCellReuseIdentifier" textLabel="jDR-ZJ-6zN" detailTextLabel="Eoe-Hj-Bb6" style="IBUITableViewCellStyleSubtitle" id="F17-Ld-3xr">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F17-Ld-3xr" id="zkL-um-RuQ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -194,17 +169,10 @@
                             <outlet property="delegate" destination="nuB-KS-lLu" id="UJ8-ho-Mzk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Departure Airport" id="U0e-Va-lxX">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="BmK-kB-FZa">
-                            <connections>
-                                <action selector="searchButtonPressed:" destination="nuB-KS-lLu" id="vdJ-1L-xaE"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ng-hz-Oc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="439"/>
+            <point key="canvasLocation" x="2484" y="578"/>
         </scene>
         <!--Result Airport Table View Controller-->
         <scene sceneID="XCO-eE-1j0">
@@ -248,12 +216,132 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wef-hy-9Xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594" y="439"/>
+            <point key="canvasLocation" x="3127" y="578"/>
         </scene>
-        <!--Departure Date/Hour-->
+        <!--Lista de viagens-->
+        <scene sceneID="Aii-6n-Gby">
+            <objects>
+                <tableViewController storyboardIdentifier="TravelsListTableViewControllerId" id="ldN-UK-63N" customClass="TravelsListTableViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="186" sectionHeaderHeight="28" sectionFooterHeight="28" id="iaV-yJ-fKS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="186" id="evP-3i-Ubc" customClass="TravelsListTableViewCell" customModule="Traveling" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="186"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="evP-3i-Ubc" id="AHL-uU-XMf">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="185.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="dom 3 de jan 11:34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD7-Pn-lNd">
+                                            <rect key="frame" x="8" y="8" width="145" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aeroporto Internacional de Brasília" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Mwq-fE-FI0">
+                                            <rect key="frame" x="125" y="62" width="150" height="61"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="7JD-0d-Agd"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aeroporto Santos Dumont" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wtk-n6-Bi7">
+                                            <rect key="frame" x="325" y="72" width="150" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="6fv-PN-VXu"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="air_plane_airport.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-yv-ghp">
+                                            <rect key="frame" x="275" y="58" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="1zl-xb-N1u"/>
+                                                <constraint firstAttribute="width" constant="50" id="zgw-bl-rzR"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Brasília Internacional - Brasília/DF" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm4-7r-6HW">
+                                            <rect key="frame" x="127" y="128" width="146.5" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="Rrv-ue-DQr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="9"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FY6940" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzh-mL-gHu">
+                                            <rect key="frame" x="489.5" y="8" width="102.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rio de Janeiro - Rio de Janeiro/RJ" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTe-lJ-uSw">
+                                            <rect key="frame" x="326" y="128" width="147.5" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="d3z-vd-JuW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="9"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="topMargin" secondItem="jD7-Pn-lNd" secondAttribute="top" id="0ch-bQ-gzd"/>
+                                        <constraint firstItem="hm4-7r-6HW" firstAttribute="top" secondItem="Mwq-fE-FI0" secondAttribute="bottom" constant="15" id="2TT-uB-YPg"/>
+                                        <constraint firstItem="wtk-n6-Bi7" firstAttribute="centerX" secondItem="AHL-uU-XMf" secondAttribute="centerX" constant="100" id="3e4-TY-Txv"/>
+                                        <constraint firstItem="hm4-7r-6HW" firstAttribute="centerX" secondItem="Mwq-fE-FI0" secondAttribute="centerX" id="BJj-ut-nio"/>
+                                        <constraint firstItem="Mwq-fE-FI0" firstAttribute="centerX" secondItem="AHL-uU-XMf" secondAttribute="centerX" constant="-100" id="Bt9-Vc-3OO"/>
+                                        <constraint firstItem="wtk-n6-Bi7" firstAttribute="centerY" secondItem="Mwq-fE-FI0" secondAttribute="centerY" id="EHx-nU-8MU"/>
+                                        <constraint firstItem="wtk-n6-Bi7" firstAttribute="centerX" secondItem="QTe-lJ-uSw" secondAttribute="centerX" id="HNo-fH-8Dg"/>
+                                        <constraint firstItem="Hpu-yv-ghp" firstAttribute="top" secondItem="AHL-uU-XMf" secondAttribute="topMargin" constant="50" id="MqR-Td-6C5"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pzh-mL-gHu" secondAttribute="trailing" id="O9E-E5-JVt"/>
+                                        <constraint firstItem="Mwq-fE-FI0" firstAttribute="centerY" secondItem="AHL-uU-XMf" secondAttribute="centerY" id="VEc-Pj-24w"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="jD7-Pn-lNd" secondAttribute="leading" id="X2j-uq-nhC"/>
+                                        <constraint firstItem="Hpu-yv-ghp" firstAttribute="centerY" secondItem="AHL-uU-XMf" secondAttribute="centerY" id="XS7-uA-pwZ"/>
+                                        <constraint firstItem="QTe-lJ-uSw" firstAttribute="top" secondItem="wtk-n6-Bi7" secondAttribute="bottom" constant="5" id="XWF-QP-VUb"/>
+                                        <constraint firstItem="pzh-mL-gHu" firstAttribute="top" secondItem="AHL-uU-XMf" secondAttribute="topMargin" id="YmM-qb-3jf"/>
+                                        <constraint firstItem="wtk-n6-Bi7" firstAttribute="centerY" secondItem="AHL-uU-XMf" secondAttribute="centerY" id="foa-FM-pzg"/>
+                                        <constraint firstItem="QTe-lJ-uSw" firstAttribute="centerY" secondItem="hm4-7r-6HW" secondAttribute="centerY" id="g73-vv-Hh8"/>
+                                        <constraint firstItem="Hpu-yv-ghp" firstAttribute="centerX" secondItem="AHL-uU-XMf" secondAttribute="centerX" id="oxu-jI-ows"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="MqR-Td-6C5"/>
+                                            <exclude reference="EHx-nU-8MU"/>
+                                            <exclude reference="XWF-QP-VUb"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="arrivalAirportLabel" destination="wtk-n6-Bi7" id="YkH-A7-oxF"/>
+                                    <outlet property="arrivalCityLabel" destination="QTe-lJ-uSw" id="fOJ-gi-f9d"/>
+                                    <outlet property="dataHourLabel" destination="jD7-Pn-lNd" id="VoQ-zQ-sEB"/>
+                                    <outlet property="departureAirportLabel" destination="Mwq-fE-FI0" id="YpW-Od-NPM"/>
+                                    <outlet property="departureCityLabel" destination="hm4-7r-6HW" id="YsQ-hr-U7S"/>
+                                    <outlet property="trackNumberLabel" destination="pzh-mL-gHu" id="eS2-bi-SrR"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ldN-UK-63N" id="8kb-It-tOk"/>
+                            <outlet property="delegate" destination="ldN-UK-63N" id="0IJ-JI-CDt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de viagens" id="rrq-k5-bLG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aF3-YV-yPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="588"/>
+        </scene>
+        <!--DepartureDateHourViewControllerId-->
         <scene sceneID="QCp-60-nua">
             <objects>
-                <viewController id="WTH-Bz-Zaz" customClass="DepartureDateHourViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DepartureDateHourViewControllerId" title="DepartureDateHourViewControllerId" id="WTH-Bz-Zaz" customClass="DepartureDateHourViewController" customModule="Traveling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P5a-O3-eTM"/>
                         <viewControllerLayoutGuide type="bottom" id="NNI-kj-tVE"/>
@@ -267,6 +355,7 @@
                                 <date key="date" timeIntervalSinceReferenceDate="471803404.44813198">
                                     <!--2015-12-14 16:30:04 +0000-->
                                 </date>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,38 +365,34 @@
                             <constraint firstItem="Z2g-rU-6oK" firstAttribute="leading" secondItem="Sdc-kr-Fa8" secondAttribute="leadingMargin" constant="51" id="xbk-ac-zBQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Departure Date/Hour" id="4ku-7L-cEv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="q5a-qZ-Axs">
-                            <connections>
-                                <segue destination="nuB-KS-lLu" kind="show" id="JPq-xg-ugi"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
                     <connections>
                         <outlet property="mDateHour" destination="Z2g-rU-6oK" id="zkV-I4-eM0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSL-m4-U0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1019" y="578"/>
+            <point key="canvasLocation" x="1831" y="578"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="haF-1O-zsJ">
+        <scene sceneID="Arn-2I-4ri">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mn9-o7-gaU" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wrL-pm-Htj" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sb5-Bu-fmP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lZF-eP-INe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WTH-Bz-Zaz" kind="relationship" relationship="rootViewController" id="3wt-0t-PMg"/>
+                        <segue destination="ldN-UK-63N" kind="relationship" relationship="rootViewController" id="4BL-WQ-lZx"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AAe-F0-waa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUF-Tv-Bvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101" y="578"/>
+            <point key="canvasLocation" x="281" y="588"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="air_plane_airport.png" width="128" height="128"/>
+    </resources>
 </document>

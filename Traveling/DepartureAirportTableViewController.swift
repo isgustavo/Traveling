@@ -1,18 +1,20 @@
 //
-//  ArrivalAirportTableViewController.swift
+//  DepatureAirportTableViewController.swift
 //  Traveling
 //
-//  Created by gustavo.freitas2 on 12/16/15.
+//  Created by gustavo.freitas2 on 12/15/15.
 //  Copyright © 2015 Pé de pano. All rights reserved.
 //
 
 import UIKit
+import CoreData
 
-class ArrivalAirportTableViewController: AirportTableViewController, AirportSearchTableViewDelegate {
+class DepartureAirportTableViewController: AirportTableViewController, AirportSearchTableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Prepare search view
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let resultAirportTableController: ResultAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ResultAirportStoryboardId") as! ResultAirportTableViewController
         resultAirportTableController.delegate = self
@@ -21,19 +23,21 @@ class ArrivalAirportTableViewController: AirportTableViewController, AirportSear
         self.mSearchController.searchBar.placeholder = "Cidade"
         self.mSearchController.searchResultsUpdater = self
         
-        self.title = "Desembarque"
+        //Put scene title
+        self.title = "Embarque"
         
     }
 
     override func navigateToArrivalAirportTableViewController(selected: Airport) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let flightTrackNumberViewController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
-        flightTrackNumberViewController.managedObjectContext = self.managedObjectContext
+        let arrivalAirportTableViewController: ArrivalAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ArrivalAirportTableViewControllerId") as! ArrivalAirportTableViewController
+        arrivalAirportTableViewController.managedObjectContext = self.managedObjectContext
         
-        self.mFlight!.arrival_airport = selected
-        flightTrackNumberViewController.mFlight = self.mFlight
-        self.navigationController!.pushViewController(flightTrackNumberViewController, animated: true)
+        print("test state name \(selected.state_name)")
+        self.mFlight!.departure_airport = selected
+        arrivalAirportTableViewController.mFlight = self.mFlight
+        self.navigationController!.pushViewController(arrivalAirportTableViewController, animated: true)
     }
     
 }

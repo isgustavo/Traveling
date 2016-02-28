@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import CoreData
 
 class DepartureDateHourViewController: UIViewController {
 
+    var managedObjectContext: NSManagedObjectContext!
+    
     @IBOutlet weak var mDateHour: UIDatePicker!
+    
+    var mFlight: Flight!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let doneButton = UIBarButtonItem(title: "Pronto", style: .Plain, target: self, action: Selector("doneButtonPressed:"))
+        self.navigationItem.rightBarButtonItem = doneButton
+ 
+        self.title = "Data/Hora"
+        
+        if let dateHour = mFlight.departure_date_hour {
+            mDateHour.date = dateHour
+        } 
 
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        
+        super.viewDidDisappear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +41,19 @@ class DepartureDateHourViewController: UIViewController {
 
     }
     
+    func doneButtonPressed(sender: UIBarButtonItem) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let departureAirportTableViewController: DepartureAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureAirportTableViewControllerId") as! DepartureAirportTableViewController
+        
+        departureAirportTableViewController.managedObjectContext = appDel.managedObjectContext
+        
+        self.mFlight!.departure_date_hour = self.mDateHour.date
+        departureAirportTableViewController.mFlight = self.mFlight
+        self.navigationController!.pushViewController(departureAirportTableViewController, animated: true)
+        
+    }
 
     /*
     // MARK: - Navigation

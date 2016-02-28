@@ -7,55 +7,139 @@
 //
 
 import UIKit
+import AVFoundation
+import MobileCoreServices
+import CoreData
 
-class FlightTrackNumberViewController: UIViewController {
+class FlightTrackNumberViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var mFlightTrackNumber: UITextField!
     
+    var mFlight: Flight?
+    
+    var managedObjectContext: NSManagedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        self.navigationController!.navigationItem.title = "Flight Track Number"
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("doneButtonPressed:"))
+        let doneButton = UIBarButtonItem(title: "Pronto", style: .Plain, target: self, action: Selector("doneButtonPressed:"))
         self.navigationItem.rightBarButtonItem = doneButton
         
+        print("new test here: \(mFlight?.departure_airport?.state_name)")
+        print("new test here: \(mFlight?.arrival_airport?.state_name)")
     }
 
-    
     override func viewWillAppear(animated: Bool) {
         
-       mFlightTrackNumber.becomeFirstResponder()
+        mFlightTrackNumber.becomeFirstResponder()
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    func doneButtonPressed() {
+    func doneButtonPressed(sender: UIBarButtonItem) {
+        
+        self.mFlight!.track_number = self.mFlightTrackNumber.text
+        
+        /*
+        let status = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+        
+        if status  == .NotDetermined {
+            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: nil)
+        }
+        
+        let can = UIImagePickerControllerSourceType.Camera
+        let ok = UIImagePickerController.isSourceTypeAvailable(can)
+        
+        if(!ok) {
+            print("no Camera")
+            return
+        }
+        
+        let desiredType = kUTTypeImage as NSString as String
+        let arr = UIImagePickerController.availableMediaTypesForSourceType(can)
+        if arr?.indexOf(desiredType) == nil {
+            print("no Camera")
+            return
+        }
+        
+        let picker = UIImagePickerController()
+        picker.sourceType = .Camera
+        picker.mediaTypes = [desiredType]
+        
+        let f = self.view.window!.bounds
+        let t = UILabel(frame: f)
+        t.textAlignment = .Center
+        t.textColor = UIColor.whiteColor()
+        t.text = "Algum anexo da reservar?"
+        picker.cameraOverlayView = t
+        
+        picker.delegate = self
+        
+        self.presentViewController(picker, animated: true, completion: nil)
+        */
+
+
+        saveFlightAndBackToMainList()
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
+        var documentsDirectory: String?
+        
+        var paths:[AnyObject] = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentationDirectory, NSSearchPathDomainMask.UserDomainMask, true)
+        
+        if paths.count > 0 {
+            
+            documentsDirectory = paths[0] as? String
+            
+            let calendar = NSCalendar.currentCalendar()
+            let hour = calendar.component(.Hour,fromDate: NSDate())
+            
+            let path = documentsDirectory! + "/\(hour).jpg"
+            let dataImage = UIImageJPEGRepresentation(image, 1.0)
+            
+            self.mFlight!.attachment_path = path
+            NSFileManager.defaultManager().createFileAtPath(path, contents: dataImage, attributes: nil)
+            
+        }
+        
+        saveFlightAndBackToMainList()
+        
+    }
+    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+
+        saveFlightAndBackToMainList()
+    }
+    
+    
+    // MARK - save flight
+    
+    func saveFlightAndBackToMainList() {
+        
+        do {
+        mFlight?.attachment_path = "path"
+        print("test here: \(mFlight?.arrival_airport?.state_name)")
+            try managedObjectContext.save()
+        } catch {
+            
+            print(error)
+        //    return
+        }
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let resultAirportTableController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
-        
-        self.navigationController!.pushViewController(resultAirportTableController, animated: true)
-        
-    }
-    
-    /*
-    // MARK: - Navigation
+        let travelsListTableViewController: TravelsListTableViewController = storyBoard.instantiateViewControllerWithIdentifier("TravelsListTableViewControllerId") as! TravelsListTableViewController
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        
+        travelsListTableViewController.managedObjectContext = self.managedObjectContext
+        self.navigationController!.popToRootViewControllerAnimated(true)//  .popToViewController(travelsListTableViewController, animated: true)
+        
     }
-    */
-    
-    
     
 
 }

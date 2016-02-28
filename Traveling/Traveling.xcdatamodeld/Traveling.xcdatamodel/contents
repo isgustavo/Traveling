@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Airport" representedClassName=".Airport" syncable="YES">
+        <attribute name="airport_initials" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="airport_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Flight" representedClassName=".Flight" syncable="YES">
-        <attribute name="arrival_airport" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="departure_airport" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="attachment_path" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="departure_date_hour" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="track_number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="arrival_airport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Airport" syncable="YES"/>
+        <relationship name="departure_airport" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Airport" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Flight" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Flight" positionX="-353" positionY="-219" width="128" height="120"/>
+        <element name="Airport" positionX="-200" positionY="-54" width="128" height="105"/>
     </elements>
 </model>
