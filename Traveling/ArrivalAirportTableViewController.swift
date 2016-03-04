@@ -29,10 +29,10 @@ class ArrivalAirportTableViewController: AirportTableViewController, AirportSear
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let flightTrackNumberViewController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
-        flightTrackNumberViewController.managedObjectContext = self.managedObjectContext
+        //flightTrackNumberViewController.managedObjectContext = self.managedObjectContext
         
-        self.mFlight!.arrival_airport = selected
-        flightTrackNumberViewController.mFlight = self.mFlight
+        //self.mFlight!.arrival_airport = selected
+        //flightTrackNumberViewController.mFlight = self.mFlight
         self.navigationController!.pushViewController(flightTrackNumberViewController, animated: true)
     }
     

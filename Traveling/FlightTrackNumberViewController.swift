@@ -25,8 +25,8 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         let doneButton = UIBarButtonItem(title: "Pronto", style: .Plain, target: self, action: Selector("doneButtonPressed:"))
         self.navigationItem.rightBarButtonItem = doneButton
         
-        print("new test here: \(mFlight?.departure_airport?.state_name)")
-        print("new test here: \(mFlight?.arrival_airport?.state_name)")
+        print("new test here: \(mFlight?.departure_airport?.stateName)")
+        print("new test here: \(mFlight?.arrival_airport?.stateName)")
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -123,7 +123,7 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         
         do {
         mFlight?.attachment_path = "path"
-        print("test here: \(mFlight?.arrival_airport?.state_name)")
+        print("test here: \(mFlight?.arrival_airport?.stateName)")
             try managedObjectContext.save()
         } catch {
             

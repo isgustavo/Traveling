@@ -10,8 +10,20 @@ import Foundation
 import CoreData
 
 
-class Airport: NSManagedObject {
+class Airport: NSObject {
 
-// Insert code here to add functionality to your managed object subclass
-
+    var cityName: String?
+    var airportName: String?
+    var airportInitials: String?
+    var stateName: String?
+    
+    
+    init(cityName: String, airportName: String, airportInitials: String, stateName: String) {
+        
+        self.cityName = cityName
+        self.airportName = airportName
+        self.airportInitials = airportInitials
+        self.stateName = stateName
+        
+    }
 }

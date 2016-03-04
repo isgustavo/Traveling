@@ -117,14 +117,17 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         
     }()
     
+    // MARK: - App Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         //save airport's data
         //AirportsBrazilLoad().verifyAirportDataBase(managedObjectContext)
+        //AirportsBrazil.sharedInstance
         
         
+        //self.navigationBar.translucent = true
         //
         let searchButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector("addButtonPressed:"))
         self.navigationItem.rightBarButtonItem = searchButton
@@ -137,6 +140,35 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Changing Status Bar
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        
+        //LightContent
+        return UIStatusBarStyle.Default
+        
+        //Default
+        //return UIStatusBarStyle.Default
+        
+    }
+    
+    // MARK: - Action Button
+    
+    func addButtonPressed(sender: AnyObject?) {
+        
+        //let context = self.frc.managedObjectContext
+        //let entity = self.frc.fetchRequest.entity!
+        
+        //let mo = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Flight
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let departureDateHourViewController: DepartureDateHourViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureDateHourViewControllerId") as! DepartureDateHourViewController
+        //departureDateHourViewController.managedObjectContext = self.managedObjectContext
+        
+        //departureDateHourViewController.mFlight = mo
+        self.navigationController!.pushViewController(departureDateHourViewController, animated: true)
+        
     }
 
     // MARK: - Table view data source
@@ -164,11 +196,11 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         cell.dataHourLabel.text = "\(flight.departure_date_hour!)"
         cell.trackNumberLabel.text = flight.track_number
 
-        cell.departureAirportLabel.text = flight.departure_airport?.airport_name
-        cell.departureCityLabel.text = "\(flight.departure_airport!.city_name!) - \(flight.departure_airport!.state_name!)"
+        cell.departureAirportLabel.text = flight.departure_airport?.airportName
+        cell.departureCityLabel.text = "\(flight.departure_airport!.cityName!) - \(flight.departure_airport!.stateName!)"
         
-        cell.arrivalAirportLabel.text = flight.arrival_airport?.airport_name
-        cell.arrivalCityLabel.text = "\(flight.arrival_airport!.city_name!) - \(flight.arrival_airport!.state_name!)"
+        cell.arrivalAirportLabel.text = flight.arrival_airport?.airportName
+        cell.arrivalCityLabel.text = "\(flight.arrival_airport!.cityName!) - \(flight.arrival_airport!.stateName!)"
 
         return cell
     }
@@ -220,19 +252,5 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     */
 
     
-    func addButtonPressed(sender: AnyObject?) {
-        
-        let context = self.frc.managedObjectContext
-        let entity = self.frc.fetchRequest.entity!
-        
-        let mo = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Flight
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let departureDateHourViewController: DepartureDateHourViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureDateHourViewControllerId") as! DepartureDateHourViewController
-        departureDateHourViewController.managedObjectContext = self.managedObjectContext
-        
-        departureDateHourViewController.mFlight = mo
-        self.navigationController!.pushViewController(departureDateHourViewController, animated: true)
-        
-    }
+    
 }

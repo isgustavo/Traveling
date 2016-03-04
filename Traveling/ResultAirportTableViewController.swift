@@ -14,14 +14,16 @@ protocol AirportSearchTableViewDelegate : class {
 
 class ResultAirportTableViewController: UITableViewController {
 
-    var mSearchResultArray: Array<Airport>!
+    var searchResultArray: [Airport] = []
     
     weak var delegate : AirportSearchTableViewDelegate?
+    
+    // MARK - App lifecyle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.mSearchResultArray = Array<Airport>()
+        //self.searchResultArray = Array<Airport>()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,17 +37,18 @@ class ResultAirportTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mSearchResultArray.count
+        return searchResultArray.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
     
-
+        let aiport: Airport = searchResultArray[indexPath.row]
+        
         // Configure the cell
-        cell.textLabel?.text = self.mSearchResultArray[indexPath.row].airport_name
-        cell.detailTextLabel?.text = self.mSearchResultArray[indexPath.row].city_name! + " - " + self.mSearchResultArray[indexPath.row].state_name!
+        cell.textLabel?.text = aiport.airportName!
+        cell.detailTextLabel?.text = aiport.cityName! + " - " + aiport.stateName!
         
         return cell
     }
@@ -53,14 +56,14 @@ class ResultAirportTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     
-        delegate?.acceptData(mSearchResultArray[indexPath.row])
+        delegate?.acceptData(searchResultArray[indexPath.row])
         dismissViewControllerAnimated(false, completion: nil)
         
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
-        self.mSearchResultArray = (object?.valueForKey("mResultAirports"))! as! Array<Airport>
+        self.searchResultArray = (object?.valueForKey("mResultAirports"))! as! [Airport]
         self.tableView.reloadData()
 
     }

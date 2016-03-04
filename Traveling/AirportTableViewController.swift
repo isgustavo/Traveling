@@ -13,34 +13,9 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     var mSearchController: UISearchController!
     
-    var managedObjectContext: NSManagedObjectContext?
-    
     dynamic var mResultAirports: NSArray!
     
-    var mFlight: Flight?
-    
-    lazy var mAirportFetchedResults: NSFetchedResultsController = {
-        
-        let req = NSFetchRequest()
-        let entity = NSEntityDescription.entityForName("Airport", inManagedObjectContext: self.managedObjectContext!)
-        req.entity = entity
-        req.fetchBatchSize = 20
-        
-        let sortDescriptor = NSSortDescriptor(key: "airport_name", ascending: true)
-        req.sortDescriptors = [sortDescriptor]
-        
-        let afrc = NSFetchedResultsController(fetchRequest: req, managedObjectContext: self.managedObjectContext!, sectionNameKeyPath: nil, cacheName: "Airports")
-        afrc.delegate = self
-        
-        do {
-            
-            try afrc.performFetch()
-        }catch {
-            print("Unresolved error \(error)")
-            fatalError("Aborting with unresolved error")
-        }
-        return afrc
-    }()
+    // MARK - App lifecyle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +30,6 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         self.addObserver(mSearchController.searchResultsController!, forKeyPath: "mResultAirports", options: .New, context: nil)
         
     }
-    
     
     override func viewDidDisappear(animated: Bool) {
         
@@ -74,24 +48,25 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return AirportsBrazil.sharedInstance.numberOfSections()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        let sectionInfo = self.mAirportFetchedResults.sections![section]
-        return sectionInfo.numberOfObjects
+        return AirportsBrazil.sharedInstance.numberOfRownInSection(section: section)
     }
     
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return AirportsBrazil.sharedInstance.titleOfSection(section: section)
+    }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("airportCellReuseIdentifier", forIndexPath: indexPath)
         
-        let object = self.mAirportFetchedResults.objectAtIndexPath(indexPath) as! Airport
+        let aiport: Airport = AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row)
         
         // Configure the cell
-        cell.textLabel?.text = object.airport_name!
-        cell.detailTextLabel?.text = object.city_name! + " - " + object.state_name!
+        cell.textLabel?.text = aiport.airportName!
+        cell.detailTextLabel?.text = aiport.cityName! + " - " + aiport.stateName!
         
         return cell
     }
@@ -100,11 +75,14 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         
-        let searchText = self.mSearchController.searchBar.text!
+        let searchText: String = self.mSearchController.searchBar.text!
         
-        let aiports = self.mAirportFetchedResults.fetchedObjects as! [Airport]
+        if searchText.isEmpty {
+            return 
+        }
+        let airports = AirportsBrazil.sharedInstance.getAllAirports(key: "\(searchText.characters.first!)")
         
-        self.mResultAirports = aiports.filter({ $0.city_name!.uppercaseString.containsString(searchText.uppercaseString) })
+        self.mResultAirports = airports?.filter({ $0.cityName!.uppercaseString.containsString(searchText.uppercaseString) })
         
     }
     
@@ -119,7 +97,7 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        navigateToArrivalAirportTableViewController(self.mAirportFetchedResults.fetchedObjects![indexPath.row] as! Airport)
+        //navigateToArrivalAirportTableViewController(self.mAirportFetchedResults.fetchedObjects![indexPath.row] as! Airport)
     }
     
     

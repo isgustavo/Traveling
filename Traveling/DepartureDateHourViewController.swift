@@ -11,11 +11,14 @@ import CoreData
 
 class DepartureDateHourViewController: UIViewController {
 
-    var managedObjectContext: NSManagedObjectContext!
+    //var managedObjectContext: NSManagedObjectContext!
+    //@IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var mDateHour: UIDatePicker!
     
-    var mFlight: Flight!
+    //var mFlight: Flight!
+    
+    // MARK - App Lifecyle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +28,31 @@ class DepartureDateHourViewController: UIViewController {
  
         self.title = "Data/Hora"
         
-        if let dateHour = mFlight.departure_date_hour {
-            mDateHour.date = dateHour
-        } 
+        //let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        //let blurView = UIVisualEffectView(effect: blurEffect)
+        //blurView.frame.size = CGSize(width: 200, height: 200)
+        //blurView.center = view.center
+        //view.addSubview(blurView)
+        
+        // show image
+        //self.imageView.image = UIImage(named: "background1")
+        
+        // create effect
+        //let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        
+        // add effect to an effect view
+        //let blurView = UIVisualEffectView(effect: blurEffect)
+        //blurView.frame = self.view.frame;
+        
+        // add the effect view to the image view
+        //self.imageView.addSubview(blurView)
+        
+        //[self.imageView addSubview:blurView];
+        
+        
+        //if let dateHour = mFlight.departure_date_hour {
+        //    mDateHour.date = dateHour
+        //}
 
     }
     
@@ -41,16 +66,19 @@ class DepartureDateHourViewController: UIViewController {
 
     }
     
+    
+    // MARK - Action Buttons
+    
     func doneButtonPressed(sender: UIBarButtonItem) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        //let appDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let departureAirportTableViewController: DepartureAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureAirportTableViewControllerId") as! DepartureAirportTableViewController
         
-        departureAirportTableViewController.managedObjectContext = appDel.managedObjectContext
+        //departureAirportTableViewController.managedObjectContext = appDel.managedObjectContext
         
-        self.mFlight!.departure_date_hour = self.mDateHour.date
-        departureAirportTableViewController.mFlight = self.mFlight
+        //self.mFlight!.departure_date_hour = self.mDateHour.date
+        //departureAirportTableViewController.mFlight = self.mFlight
         self.navigationController!.pushViewController(departureAirportTableViewController, animated: true)
         
     }

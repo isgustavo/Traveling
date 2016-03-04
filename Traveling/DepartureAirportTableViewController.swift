@@ -11,6 +11,8 @@ import CoreData
 
 class DepartureAirportTableViewController: AirportTableViewController, AirportSearchTableViewDelegate {
     
+    // MARK - App Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +26,7 @@ class DepartureAirportTableViewController: AirportTableViewController, AirportSe
         self.mSearchController.searchResultsUpdater = self
         
         //Put scene title
-        self.title = "Embarque"
+        self.title = "Cidade de Embarque"
         
     }
 
@@ -32,11 +34,11 @@ class DepartureAirportTableViewController: AirportTableViewController, AirportSe
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let arrivalAirportTableViewController: ArrivalAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ArrivalAirportTableViewControllerId") as! ArrivalAirportTableViewController
-        arrivalAirportTableViewController.managedObjectContext = self.managedObjectContext
+        //arrivalAirportTableViewController.managedObjectContext = self.managedObjectContext
         
-        print("test state name \(selected.state_name)")
-        self.mFlight!.departure_airport = selected
-        arrivalAirportTableViewController.mFlight = self.mFlight
+        print("test state name \(selected.stateName)")
+        //self.mFlight!.departure_airport = selected
+        //arrivalAirportTableViewController.mFlight = self.mFlight
         self.navigationController!.pushViewController(arrivalAirportTableViewController, animated: true)
     }
     
