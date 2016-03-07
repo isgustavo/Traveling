@@ -89,7 +89,7 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     
     var managedObjectContext: NSManagedObjectContext!
     
-    lazy var frc: NSFetchedResultsController = {
+    /*lazy var frc: NSFetchedResultsController = {
         
         let req = NSFetchRequest()
         let entity = NSEntityDescription.entityForName("Flight", inManagedObjectContext: self.managedObjectContext)
@@ -115,7 +115,7 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         
         return afrc
         
-    }()
+    }()*/
     
     // MARK: - App Lifecycle
     
@@ -129,8 +129,13 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         
         //self.navigationBar.translucent = true
         //
-        let searchButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector("addButtonPressed:"))
-        self.navigationItem.rightBarButtonItem = searchButton
+        let newFlightButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector("addButtonPressed:"))
+        //self.navigationItem.rightBarButtonItem = searchButton
+        
+        let newHotelButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("donePressed:"))
+        //self.navigationItem.rightBarButtonItem = secondButton
+        
+        self.navigationItem.rightBarButtonItems = [newFlightButton, newHotelButton]
         
         //self.tableView.reloadData()
         
@@ -140,17 +145,6 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    //Changing Status Bar
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        
-        //LightContent
-        return UIStatusBarStyle.Default
-        
-        //Default
-        //return UIStatusBarStyle.Default
-        
     }
     
     // MARK: - Action Button
@@ -163,11 +157,13 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         //let mo = NSEntityDescription.insertNewObjectForEntityForName(entity.name!, inManagedObjectContext: context) as! Flight
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let departureDateHourViewController: DepartureDateHourViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureDateHourViewControllerId") as! DepartureDateHourViewController
+        let newFlightTableViewController: NewFlightTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewFlightTableViewControllerId") as! NewFlightTableViewController
+        //let departureDateHourViewController: DepartureDateHourViewController = storyBoard.instantiateViewControllerWithIdentifier("DepartureDateHourViewControllerId") as! DepartureDateHourViewController
         //departureDateHourViewController.managedObjectContext = self.managedObjectContext
         
         //departureDateHourViewController.mFlight = mo
-        self.navigationController!.pushViewController(departureDateHourViewController, animated: true)
+        //self.navigationController!.pushViewController(departureDateHourViewController, animated: true)
+        self.navigationController!.pushViewController(newFlightTableViewController, animated: true)
         
     }
 
@@ -181,8 +177,8 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        let sectionInfo = self.frc.sections![section]
-        return sectionInfo.numberOfObjects
+        //let sectionInfo = self.frc.sections![section]
+        return 0// sectionInfo.numberOfObjects
     }
 
     
@@ -191,16 +187,16 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
 
         //let flight = self.flightList![indexPath.row]
         
-        let flight = self.frc.objectAtIndexPath(indexPath) as! Flight
+        //let flight = self.frc.objectAtIndexPath(indexPath) as! Flight
         
-        cell.dataHourLabel.text = "\(flight.departure_date_hour!)"
-        cell.trackNumberLabel.text = flight.track_number
+        //cell.dataHourLabel.text = "\(flight.departure_date_hour!)"
+        //cell.trackNumberLabel.text = flight.track_number
 
-        cell.departureAirportLabel.text = flight.departure_airport?.airportName
-        cell.departureCityLabel.text = "\(flight.departure_airport!.cityName!) - \(flight.departure_airport!.stateName!)"
+        //cell.departureAirportLabel.text = flight.departure_airport?.airportName
+        //cell.departureCityLabel.text = "\(flight.departure_airport!.cityName!) - \(flight.departure_airport!.stateName!)"
         
-        cell.arrivalAirportLabel.text = flight.arrival_airport?.airportName
-        cell.arrivalCityLabel.text = "\(flight.arrival_airport!.cityName!) - \(flight.arrival_airport!.stateName!)"
+        //cell.arrivalAirportLabel.text = flight.arrival_airport?.airportName
+        //cell.arrivalCityLabel.text = "\(flight.arrival_airport!.cityName!) - \(flight.arrival_airport!.stateName!)"
 
         return cell
     }

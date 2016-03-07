@@ -10,6 +10,8 @@ import UIKit
 
 class ArrivalAirportTableViewController: AirportTableViewController, AirportSearchTableViewDelegate {
     
+    // MARK - App Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,22 +20,26 @@ class ArrivalAirportTableViewController: AirportTableViewController, AirportSear
         resultAirportTableController.delegate = self
         
         self.mSearchController = UISearchController(searchResultsController: resultAirportTableController)
-        self.mSearchController.searchBar.placeholder = "Cidade"
+        self.mSearchController.searchBar.placeholder = "City"
         self.mSearchController.searchResultsUpdater = self
         
-        self.title = "Desembarque"
+        //Put scene title
+        self.title = "Arrival city"
         
     }
 
-    override func navigateToArrivalAirportTableViewController(selected: Airport) {
+    override func airportSelected(selected: Airport) {
         
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let flightTrackNumberViewController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
+        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let flightTrackNumberViewController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
         //flightTrackNumberViewController.managedObjectContext = self.managedObjectContext
         
         //self.mFlight!.arrival_airport = selected
         //flightTrackNumberViewController.mFlight = self.mFlight
-        self.navigationController!.pushViewController(flightTrackNumberViewController, animated: true)
+        //self.navigationController!.pushViewController(flightTrackNumberViewController, animated: true)
+        Flight.sharedInstance.setArrivalAirport(selected)
+        self.navigationController!.popViewControllerAnimated(true)
+        //dismissViewControllerAnimated(false, completion: nil)
     }
     
 }

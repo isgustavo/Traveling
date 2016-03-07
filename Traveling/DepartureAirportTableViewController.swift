@@ -22,24 +22,29 @@ class DepartureAirportTableViewController: AirportTableViewController, AirportSe
         resultAirportTableController.delegate = self
         
         self.mSearchController = UISearchController(searchResultsController: resultAirportTableController)
-        self.mSearchController.searchBar.placeholder = "Cidade"
+        self.mSearchController.searchBar.placeholder = "City"
         self.mSearchController.searchResultsUpdater = self
         
         //Put scene title
-        self.title = "Cidade de Embarque"
+        self.title = "Depature city"
         
     }
 
-    override func navigateToArrivalAirportTableViewController(selected: Airport) {
+    override func airportSelected(selected: Airport) {
         
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let arrivalAirportTableViewController: ArrivalAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ArrivalAirportTableViewControllerId") as! ArrivalAirportTableViewController
+        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let arrivalAirportTableViewController: ArrivalAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ArrivalAirportTableViewControllerId") as! ArrivalAirportTableViewController
         //arrivalAirportTableViewController.managedObjectContext = self.managedObjectContext
         
         print("test state name \(selected.stateName)")
+        
+        Flight.sharedInstance.setDepartureAirport(selected)
         //self.mFlight!.departure_airport = selected
         //arrivalAirportTableViewController.mFlight = self.mFlight
-        self.navigationController!.pushViewController(arrivalAirportTableViewController, animated: true)
+        //self.navigationController!.pushViewController(arrivalAirportTableViewController, animated: true)
+        self.navigationController!.popViewControllerAnimated(true)
+        //dismissViewControllerAnimated(false, completion: nil)
+        
     }
     
 }

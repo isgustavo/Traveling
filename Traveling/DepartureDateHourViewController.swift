@@ -12,7 +12,7 @@ import CoreData
 class DepartureDateHourViewController: UIViewController {
 
     //var managedObjectContext: NSManagedObjectContext!
-    //@IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var mDateHour: UIDatePicker!
     
@@ -28,6 +28,12 @@ class DepartureDateHourViewController: UIViewController {
  
         self.title = "Data/Hora"
         
+        let bar:UINavigationBar! =  self.navigationController?.navigationBar
+        
+        bar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        bar.shadowImage = UIImage()
+        bar.backgroundColor = UIColor(red: 0.0, green: 0.3, blue: 0.5, alpha: 0.0)
+        
         //let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
         //let blurView = UIVisualEffectView(effect: blurEffect)
         //blurView.frame.size = CGSize(width: 200, height: 200)
@@ -35,17 +41,17 @@ class DepartureDateHourViewController: UIViewController {
         //view.addSubview(blurView)
         
         // show image
-        //self.imageView.image = UIImage(named: "background1")
+        self.imageView.image = UIImage(named: "background")
         
         // create effect
-        //let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         
         // add effect to an effect view
-        //let blurView = UIVisualEffectView(effect: blurEffect)
-        //blurView.frame = self.view.frame;
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = self.view.frame;
         
         // add the effect view to the image view
-        //self.imageView.addSubview(blurView)
+        self.imageView.addSubview(blurView)
         
         //[self.imageView addSubview:blurView];
         

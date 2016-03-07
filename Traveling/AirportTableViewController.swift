@@ -24,6 +24,7 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         let searchButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: Selector("searchButtonPressed:"))
         self.navigationItem.rightBarButtonItem = searchButton
         
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -90,7 +91,9 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     func acceptData(data:AnyObject!) {
         
-        navigateToArrivalAirportTableViewController(data as! Airport)
+        airportSelected(data as! Airport)
+        
+        //AirportTableViewController(data as! Airport)
     }
     
     // MARK: - Table view delegate
@@ -98,6 +101,8 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         //navigateToArrivalAirportTableViewController(self.mAirportFetchedResults.fetchedObjects![indexPath.row] as! Airport)
+        
+        airportSelected(AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row))
     }
     
     
@@ -108,6 +113,6 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         self.presentViewController(self.mSearchController, animated: true, completion: nil)
     }
     
-    func navigateToArrivalAirportTableViewController(selected: Airport) { }
+    func airportSelected(selected: Airport) { }
     
 }

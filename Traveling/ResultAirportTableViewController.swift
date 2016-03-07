@@ -22,8 +22,6 @@ class ResultAirportTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //self.searchResultArray = Array<Airport>()
     }
 
     override func didReceiveMemoryWarning() {

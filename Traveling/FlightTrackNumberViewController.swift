@@ -15,9 +15,9 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
 
     @IBOutlet weak var mFlightTrackNumber: UITextField!
     
-    var mFlight: Flight?
+    //var mFlight: Flight?
     
-    var managedObjectContext: NSManagedObjectContext!
+    //var managedObjectContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,8 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         let doneButton = UIBarButtonItem(title: "Pronto", style: .Plain, target: self, action: Selector("doneButtonPressed:"))
         self.navigationItem.rightBarButtonItem = doneButton
         
-        print("new test here: \(mFlight?.departure_airport?.stateName)")
-        print("new test here: \(mFlight?.arrival_airport?.stateName)")
+        //print("new test here: \(mFlight?.departure_airport?.stateName)")
+        //print("new test here: \(mFlight?.arrival_airport?.stateName)")
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -42,7 +42,7 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
 
     func doneButtonPressed(sender: UIBarButtonItem) {
         
-        self.mFlight!.track_number = self.mFlightTrackNumber.text
+        //self.mFlight!.track_number = self.mFlightTrackNumber.text
         
         /*
         let status = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
@@ -82,11 +82,14 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         self.presentViewController(picker, animated: true, completion: nil)
         */
 
+        
+        Flight.sharedInstance.setNumber(mFlightTrackNumber.text!)
+        self.navigationController!.popViewControllerAnimated(true)
 
-        saveFlightAndBackToMainList()
+        //saveFlightAndBackToMainList()
     }
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+    /*func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         
         var documentsDirectory: String?
         
@@ -102,7 +105,7 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
             let path = documentsDirectory! + "/\(hour).jpg"
             let dataImage = UIImageJPEGRepresentation(image, 1.0)
             
-            self.mFlight!.attachment_path = path
+            //self.mFlight!.attachment_path = path
             NSFileManager.defaultManager().createFileAtPath(path, contents: dataImage, attributes: nil)
             
         }
@@ -122,8 +125,8 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
     func saveFlightAndBackToMainList() {
         
         do {
-        mFlight?.attachment_path = "path"
-        print("test here: \(mFlight?.arrival_airport?.stateName)")
+        //mFlight?.attachment_path = "path"
+        //print("test here: \(mFlight?.arrival_airport?.stateName)")
             try managedObjectContext.save()
         } catch {
             
@@ -139,7 +142,7 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         travelsListTableViewController.managedObjectContext = self.managedObjectContext
         self.navigationController!.popToRootViewControllerAnimated(true)//  .popToViewController(travelsListTableViewController, animated: true)
         
-    }
+    }*/
     
 
 }
