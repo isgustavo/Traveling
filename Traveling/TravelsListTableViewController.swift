@@ -54,6 +54,11 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     
     func hotelButtonPressed(sender: AnyObject) {
         
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newHotelTableViewController: NewHotelTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewHotelTableViewControllerId") as! NewHotelTableViewController
+        
+        self.navigationController!.pushViewController(newHotelTableViewController, animated: true)
+
     }
 
     // MARK: - Table view data source

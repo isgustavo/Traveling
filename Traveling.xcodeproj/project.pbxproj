@@ -16,7 +16,6 @@
 		7239A6E61C8CCEB300172C83 /* DateHourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239A6E51C8CCEB300172C83 /* DateHourTableViewCell.swift */; };
 		7239A6E81C8CD98C00172C83 /* NewFlightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239A6E71C8CD98C00172C83 /* NewFlightTableViewController.swift */; };
 		7239A6ED1C8CFA3900172C83 /* NewHotelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239A6EC1C8CFA3900172C83 /* NewHotelTableViewController.swift */; };
-		7239A6EF1C8CFA5700172C83 /* NewHotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239A6EE1C8CFA5700172C83 /* NewHotelTableViewCell.swift */; };
 		725ED3BC1C946D3200BF68E7 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ED3BB1C946D3200BF68E7 /* AirportTableViewCell.swift */; };
 		725ED3C01C94844100BF68E7 /* LocatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725ED3BF1C94844100BF68E7 /* LocatorTableViewCell.swift */; };
 		7278FD781C8DC10D008596E2 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7278FD771C8DC10D008596E2 /* Travel.swift */; };
@@ -35,6 +34,9 @@
 		72CE06E71C92DFEF00E8AC56 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE06E61C92DFEF00E8AC56 /* FlightTableViewCell.swift */; };
 		72CE06E91C92E0D300E8AC56 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CE06E81C92E0D300E8AC56 /* HotelTableViewCell.swift */; };
 		72EA155C1C89A8F300501505 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EA155B1C89A8F300501505 /* CloudKit.framework */; };
+		72FE49521C95CC53006A1883 /* NewHotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE49511C95CC53006A1883 /* NewHotelTableViewCell.swift */; };
+		72FE49541C95CDED006A1883 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE49531C95CDED006A1883 /* Hotel.swift */; };
+		72FE49561C95D2DC006A1883 /* CheckInDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FE49551C95D2DC006A1883 /* CheckInDateTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,6 @@
 		7239A6E51C8CCEB300172C83 /* DateHourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHourTableViewCell.swift; sourceTree = "<group>"; };
 		7239A6E71C8CD98C00172C83 /* NewFlightTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewFlightTableViewController.swift; path = ../NewFlightTableViewController.swift; sourceTree = "<group>"; };
 		7239A6EC1C8CFA3900172C83 /* NewHotelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHotelTableViewController.swift; sourceTree = "<group>"; };
-		7239A6EE1C8CFA5700172C83 /* NewHotelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHotelTableViewCell.swift; sourceTree = "<group>"; };
 		725ED3BB1C946D3200BF68E7 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
 		725ED3BF1C94844100BF68E7 /* LocatorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocatorTableViewCell.swift; sourceTree = "<group>"; };
 		7278FD771C8DC10D008596E2 /* Travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
@@ -69,6 +70,9 @@
 		72CE06E81C92E0D300E8AC56 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
 		72EA155A1C89A8EB00501505 /* Traveling.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Traveling.entitlements; sourceTree = "<group>"; };
 		72EA155B1C89A8F300501505 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		72FE49511C95CC53006A1883 /* NewHotelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHotelTableViewCell.swift; sourceTree = "<group>"; };
+		72FE49531C95CDED006A1883 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		72FE49551C95D2DC006A1883 /* CheckInDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInDateTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				7239A6EC1C8CFA3900172C83 /* NewHotelTableViewController.swift */,
-				7239A6EE1C8CFA5700172C83 /* NewHotelTableViewCell.swift */,
+				72FE49511C95CC53006A1883 /* NewHotelTableViewCell.swift */,
+				72FE49551C95D2DC006A1883 /* CheckInDateTableViewCell.swift */,
 			);
 			name = Hotel;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				15A504F31C3C3B86009B6EC9 /* Flight.swift */,
 				15A504F51C3C3B86009B6EC9 /* Airport.swift */,
 				7278FD771C8DC10D008596E2 /* Travel.swift */,
+				72FE49531C95CDED006A1883 /* Hotel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -268,7 +274,6 @@
 				72CC43E31C1F276E00465455 /* DepartureDateHourViewController.swift in Sources */,
 				72CE06E91C92E0D300E8AC56 /* HotelTableViewCell.swift in Sources */,
 				727AFB4C1C18926E00BB63B1 /* Traveling.xcdatamodeld in Sources */,
-				7239A6EF1C8CFA5700172C83 /* NewHotelTableViewCell.swift in Sources */,
 				15A9A5031C3C9520008044A9 /* ArrivalAirportTableViewController.swift in Sources */,
 				15A9A5011C3C8DCA008044A9 /* AirportTableViewController.swift in Sources */,
 				7278FD781C8DC10D008596E2 /* Travel.swift in Sources */,
@@ -281,6 +286,9 @@
 				15A504ED1C3ADF2A009B6EC9 /* TravelsListTableViewController.swift in Sources */,
 				7239A6ED1C8CFA3900172C83 /* NewHotelTableViewController.swift in Sources */,
 				7239A6E81C8CD98C00172C83 /* NewFlightTableViewController.swift in Sources */,
+				72FE49561C95D2DC006A1883 /* CheckInDateTableViewCell.swift in Sources */,
+				72FE49541C95CDED006A1883 /* Hotel.swift in Sources */,
+				72FE49521C95CC53006A1883 /* NewHotelTableViewCell.swift in Sources */,
 				727AFB5F1C1896A700BB63B1 /* AirportsBrazil.swift in Sources */,
 				15A504F11C3C03E4009B6EC9 /* TravelsListTableViewCell.swift in Sources */,
 				725ED3C01C94844100BF68E7 /* LocatorTableViewCell.swift in Sources */,
