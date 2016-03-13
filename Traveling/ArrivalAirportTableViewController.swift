@@ -30,16 +30,8 @@ class ArrivalAirportTableViewController: AirportTableViewController, AirportSear
 
     override func airportSelected(selected: Airport) {
         
-        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        //let flightTrackNumberViewController: FlightTrackNumberViewController = storyBoard.instantiateViewControllerWithIdentifier("FlightTrackNumberViewControllerId") as! FlightTrackNumberViewController
-        //flightTrackNumberViewController.managedObjectContext = self.managedObjectContext
-        
-        //self.mFlight!.arrival_airport = selected
-        //flightTrackNumberViewController.mFlight = self.mFlight
-        //self.navigationController!.pushViewController(flightTrackNumberViewController, animated: true)
         Flight.sharedInstance.setArrivalAirport(selected)
         self.navigationController!.popViewControllerAnimated(true)
-        //dismissViewControllerAnimated(false, completion: nil)
     }
     
 }

@@ -3,7 +3,7 @@
 //  Traveling
 //
 //  Created by Gustavo F Oliveira on 12/9/15.
-//  Copyright © 2015 Pé de pano. All rights reserved.
+//  Copyright © 2015 HACKATRUCK. All rights reserved.
 //
 
 import UIKit

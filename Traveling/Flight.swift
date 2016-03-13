@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Flight {
+class Flight: Travel {
     
     private var departureAirport: Airport?
     private var dateHour: NSDate!
@@ -18,7 +18,9 @@ class Flight {
     
     static let sharedInstance = Flight()
     
-    private init() { print("created") }
+    private init() {
+        self.dateHour = NSDate()
+    }
     
     func getDepartureAirport() -> Airport? {
         return self.departureAirport
@@ -48,10 +50,16 @@ class Flight {
         return number
     }
     
-    func setNumber(number: String) {
+    func setNumber(number: String?) {
         self.number = number;
     }
     
-    
+    func completed() -> Bool{
+        if self.departureAirport != nil && self.arrivalAirport != nil && self.number != nil  && self.number != ""{
+           return true
+        }else {
+            return false
+        }
+    }
 
 }

@@ -13,11 +13,11 @@ class AirportsBrazil {
     
     private let CITY: String = "CITY"
     private let ID: String = "_id"
-    private let CITY_INITIALS: String = "city_initials"
+    //private let CITY_INITIALS: String = "city_initials"
     private let CITY_NAME: String = "city_name"
     private let STATE_NAME: String = "state_name"
     private let AIRPORT_NAME: String = "airport_name"
-    private let AIRPORT_INITIALS: String = "airport_initials"
+    //private let AIRPORT_INITIALS: String = "airport_initials"
     
     static let sharedInstance = AirportsBrazil()
     
@@ -38,9 +38,9 @@ class AirportsBrazil {
             let cityName:String = airportResult.valueForKey(CITY_NAME) as! String
             let stateName:String = airportResult.valueForKey(STATE_NAME) as! String
             let airportName:String = airportResult.valueForKey(AIRPORT_NAME) as! String
-            let airportInitials:String = airportResult.valueForKey(AIRPORT_INITIALS) as! String
+            //let airportInitials:String = airportResult.valueForKey(AIRPORT_INITIALS) as! String
             
-            let airport: Airport = Airport(cityName: cityName, airportName: airportName, airportInitials: airportInitials, stateName: stateName)
+            let airport: Airport = Airport(cityName: cityName, airportName: airportName, airportInitials: nil, stateName: stateName)
             
             let cityNameFirstLetter = "\(cityName.characters.first!)"
             

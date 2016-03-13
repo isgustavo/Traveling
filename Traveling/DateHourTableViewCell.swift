@@ -12,4 +12,15 @@ class DateHourTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dateHourDatePicker: UIDatePicker!
 
+    weak var delegate : SelectedRowDelegate?
+    
+    @IBAction func dataHourChanged(sender: AnyObject) {
+        dateHourDatePicker.becomeFirstResponder()
+        
+        UIApplication.sharedApplication().sendAction("resignFirstResponder", to:nil, from:nil, forEvent:nil)
+        delegate?.setOriginalContentOffset()
+
+        let date: NSDate = dateHourDatePicker.date
+        Flight.sharedInstance.setDateHour(date)
+    }
 }

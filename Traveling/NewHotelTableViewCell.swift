@@ -2,8 +2,8 @@
 //  NewHotelTableViewCell.swift
 //  Traveling
 //
-//  Created by gustavo.freitas2 on 3/6/16.
-//  Copyright © 2016 Pé de pano. All rights reserved.
+//  Created by Gustavo F Oliveira on 3/6/16.
+//  Copyright © 2016 HACKATRUCK. All rights reserved.
 //
 
 import UIKit

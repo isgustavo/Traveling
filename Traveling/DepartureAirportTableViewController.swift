@@ -2,8 +2,8 @@
 //  DepatureAirportTableViewController.swift
 //  Traveling
 //
-//  Created by gustavo.freitas2 on 12/15/15.
-//  Copyright © 2015 Pé de pano. All rights reserved.
+//  Created by Gustavo F Oliveira on 12/15/15.
+//  Copyright © 2015 HACKATRUCK. All rights reserved.
 //
 
 import UIKit
@@ -31,19 +31,9 @@ class DepartureAirportTableViewController: AirportTableViewController, AirportSe
     }
 
     override func airportSelected(selected: Airport) {
-        
-        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        //let arrivalAirportTableViewController: ArrivalAirportTableViewController = storyBoard.instantiateViewControllerWithIdentifier("ArrivalAirportTableViewControllerId") as! ArrivalAirportTableViewController
-        //arrivalAirportTableViewController.managedObjectContext = self.managedObjectContext
-        
-        print("test state name \(selected.stateName)")
-        
+
         Flight.sharedInstance.setDepartureAirport(selected)
-        //self.mFlight!.departure_airport = selected
-        //arrivalAirportTableViewController.mFlight = self.mFlight
-        //self.navigationController!.pushViewController(arrivalAirportTableViewController, animated: true)
         self.navigationController!.popViewControllerAnimated(true)
-        //dismissViewControllerAnimated(false, completion: nil)
         
     }
     

@@ -18,7 +18,7 @@ class Airport: NSObject {
     var stateName: String?
     
     
-    init(cityName: String, airportName: String, airportInitials: String, stateName: String) {
+    init(cityName: String, airportName: String, airportInitials: String?, stateName: String) {
         
         self.cityName = cityName
         self.airportName = airportName

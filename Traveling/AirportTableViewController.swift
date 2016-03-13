@@ -3,7 +3,7 @@
 //  Traveling
 //
 //  Created by Gustavo F Oliveira on 1/5/16.
-//  Copyright © 2016 Pé de pano. All rights reserved.
+//  Copyright © 2016 HACKATRUCK. All rights reserved.
 //
 
 import UIKit
@@ -23,7 +23,6 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         //Put search button
         let searchButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: Selector("searchButtonPressed:"))
         self.navigationItem.rightBarButtonItem = searchButton
-        
         
     }
     
@@ -92,15 +91,11 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     func acceptData(data:AnyObject!) {
         
         airportSelected(data as! Airport)
-        
-        //AirportTableViewController(data as! Airport)
     }
     
     // MARK: - Table view delegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-        //navigateToArrivalAirportTableViewController(self.mAirportFetchedResults.fetchedObjects![indexPath.row] as! Airport)
         
         airportSelected(AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row))
     }
