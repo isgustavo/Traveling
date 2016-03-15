@@ -12,28 +12,37 @@ class LocatorTableViewCell: UITableViewCell, UITextFieldDelegate{
 
     @IBOutlet weak var locator: UITextField!
     
-    weak var delegate : SelectedRowDelegate?
+    weak var selectedDelegate: SelectedRowDelegate?
+    weak var valueDelegate: NewFlightDeletage?
+    
+    override func awakeFromNib() {
+        self.locator.delegate = self
+    }
     
     @IBAction func selectedToEditing(sender: AnyObject) {
-
-        self.locator.delegate = self
-        delegate?.setUpContentOfSet()
-        self.setLocatorTextToFlight()
+        
+        self.selectedDelegate?.setUpContentOfSet()
     }
     
     //MARK: - UITextFieldDelegate
     
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let text = textField.text
+        textField.text = text?.uppercaseString
+        
+        return true
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         self.locator.resignFirstResponder()
-        delegate?.setOriginalContentOffset()
         self.setLocatorTextToFlight()
         return true
     }
     
     func textFieldShouldEndEditing(textField: UITextField) -> Bool {
         
-        delegate?.setOriginalContentOffset()
         self.setLocatorTextToFlight()
         return true
     }
@@ -41,8 +50,9 @@ class LocatorTableViewCell: UITableViewCell, UITextFieldDelegate{
     
     func setLocatorTextToFlight(){
         
+        self.selectedDelegate?.setOriginalContentOffset()
         if let loc = locator.text {
-            Flight.sharedInstance.setNumber(loc)
+            valueDelegate!.setLocatorNumber(loc)
         }
     }
     

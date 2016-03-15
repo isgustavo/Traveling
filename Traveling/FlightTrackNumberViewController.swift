@@ -83,7 +83,7 @@ class FlightTrackNumberViewController: UIViewController, UINavigationControllerD
         */
 
         
-        Flight.sharedInstance.setNumber(mFlightTrackNumber.text!)
+        //Flight.sharedInstance.setNumber(mFlightTrackNumber.text!)
         self.navigationController!.popViewControllerAnimated(true)
 
         //saveFlightAndBackToMainList()

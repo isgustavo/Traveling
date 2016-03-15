@@ -12,7 +12,9 @@ import CoreData
 
 class TravelsListTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
-    static var travels: [Travel] = [Travel]()
+    internal let SECTIONS: Int = 1
+    
+    var travels: [NSManagedObject] = [NSManagedObject]()
     
     // MARK: - App Lifecycle
     
@@ -20,20 +22,29 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         super.viewDidLoad()
 
         let newFlightButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: Selector("flightButtonPressed:"))
-        //newFlightButton.tintColor = AppColors.PURPLE_COLOR
+        newFlightButton.tintColor = AppColors.PURPLE_COLOR
         
         let newHotelButton = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("hotelButtonPressed:"))
-        //newHotelButton.tintColor = AppColors.PURPLE_COLOR
+        newHotelButton.tintColor = AppColors.PURPLE_COLOR
         
         self.navigationItem.rightBarButtonItems = [newFlightButton, newHotelButton]
         
         self.title = "TRAVELS"
+        self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
         
-        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
-        //self.navigationController?.navigationBar.shadowImage = UIImage()
+        //let logoImage:UIImage = UIImage(named: "travels")!
+        //self.navigationItem.titleView = UIImageView(image: logoImage)
         
-        self.navigationController?.navigationBar.backgroundColor = AppColors.PINK
+        //self.navigationController!.navigationItem.titleView = UIVIew UIImage(named: "travels")
 
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        travels = FlightDAO.fetchAllFlight()
+        //l.count
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,21 +75,34 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return SECTIONS
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return travels.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return CGFloat(91.0)
+        if travels[indexPath.row] is Flight {
+            return CGFloat(182.0)
+        } else {
+           return CGFloat(92.0)
+        }
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("FlightCellIdentifier", forIndexPath: indexPath) //as! TravelsListTableViewCell
+        if travels[indexPath.row] is Flight {
+            let cell = tableView.dequeueReusableCellWithIdentifier("flightCellIdentifier", forIndexPath: indexPath) as! FlightTableViewCell
+            let flight = travels[indexPath.row] as! Flight
+            
+            cell.date.text = "\(flight.data_hour)"
+            cell.airport.text = flight.departure_relationship?.airport_name
+            cell.city.text = flight.departure_relationship?.city_name
+            cell.airline.text = AirlineBrazil.sharedInstance.getAirline(indexPath.row)
+            cell.locator.text = flight.locator
+            cell.arrivalDate.text = "\(flight.data_hour)"
+            cell.arrivalAirport.text = flight.arrival_relationship?.airport_name
+            cell.arrivalAirport.text = flight.arrival_relationship?.city_name
             return cell
         }
         

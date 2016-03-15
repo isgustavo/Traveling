@@ -42,11 +42,11 @@ class ResultAirportTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
     
-        let aiport: Airport = searchResultArray[indexPath.row]
+        let airport: Airport = searchResultArray[indexPath.row]
         
         // Configure the cell
-        cell.textLabel?.text = aiport.airportName!
-        cell.detailTextLabel?.text = aiport.cityName! + " - " + aiport.stateName!
+        cell.textLabel?.text = airport.airport_name!
+        cell.detailTextLabel?.text = airport.city_name! + " - " + airport.state_name!
         
         return cell
     }

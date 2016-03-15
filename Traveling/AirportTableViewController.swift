@@ -15,6 +15,10 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     dynamic var mResultAirports: NSArray!
     
+    weak var delegate: NewFlightDeletage?
+    
+    var airportList: [Airport]?
+    
     // MARK - App lifecyle
     
     override func viewDidLoad() {
@@ -23,6 +27,9 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         //Put search button
         let searchButton = UIBarButtonItem(barButtonSystemItem: .Search, target: self, action: Selector("searchButtonPressed:"))
         self.navigationItem.rightBarButtonItem = searchButton
+        
+        airportList = AirportDAO.fetchAll()
+        
         
     }
     
@@ -48,25 +55,27 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return AirportsBrazil.sharedInstance.numberOfSections()
+        return 1//AirportsBrazil.sharedInstance.numberOfSections()
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return AirportsBrazil.sharedInstance.numberOfRownInSection(section: section)
+        //return AirportsBrazil.sharedInstance.numberOfRownInSection(section: section)
+        return (airportList?.count)!
     }
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return AirportsBrazil.sharedInstance.titleOfSection(section: section)
-    }
+    //override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //    return AirportsBrazil.sharedInstance.titleOfSection(section: section)
+    //}
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("airportCellReuseIdentifier", forIndexPath: indexPath)
         
-        let aiport: Airport = AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row)
+        //let aiport: Airport = AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row)
+        let airport = airportList![indexPath.row]
         
         // Configure the cell
-        cell.textLabel?.text = aiport.airportName!
-        cell.detailTextLabel?.text = aiport.cityName! + " - " + aiport.stateName!
+        cell.textLabel?.text = airport.airport_name
+        cell.detailTextLabel?.text = airport.city_name! + " - " + airport.state_name!
         
         return cell
     }
@@ -80,9 +89,9 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
         if searchText.isEmpty {
             return 
         }
-        let airports = AirportsBrazil.sharedInstance.getAllAirports(key: "\(searchText.characters.first!)")
+        //let airports = AirportsBrazil.sharedInstance.getAllAirports(key: "\(searchText.characters.first!)")
         
-        self.mResultAirports = airports?.filter({ $0.cityName!.uppercaseString.containsString(searchText.uppercaseString) })
+        self.mResultAirports = airportList?.filter({ $0.city_name!.uppercaseString.containsString(searchText.uppercaseString) })
         
     }
     
@@ -97,7 +106,9 @@ class AirportTableViewController : UITableViewController, UISearchResultsUpdatin
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        airportSelected(AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row))
+        let airport = airportList![indexPath.row]
+        //airportSelected(AirportsBrazil.sharedInstance.getAirport(indexPath.section, row: indexPath.row))
+        airportSelected(airport)
     }
     
     

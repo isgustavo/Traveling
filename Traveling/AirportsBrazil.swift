@@ -9,6 +9,27 @@
 import Foundation
 import CoreData
 
+class AirlineBrazil {
+    
+    static let sharedInstance = AirlineBrazil()
+    private var airlines: [String] = []
+    
+    private init(){
+        airlines.append("Avianca Brasil")
+        airlines.append("Azul Linhas Aéreas Brasileiras")
+        airlines.append("Gol Transportes Aéreos")
+        airlines.append("TAM Linhas Aéreas")
+    }
+    
+    func getAirline(row: Int) -> String {
+        return self.airlines[row]
+    }
+    
+    func getAirlines() -> [String] {
+        return self.airlines
+    }
+}
+
 class AirportsBrazil {
     
     private let CITY: String = "CITY"
@@ -21,8 +42,10 @@ class AirportsBrazil {
     
     static let sharedInstance = AirportsBrazil()
     
-    private var airports: [String : [Airport]] = [:]
+    //private var airports: [String : [Airport]] = [:]
     private var keys: [String] = []
+    
+    private var airports: Set<Airport> = Set<Airport>()
     
     private init() {
         
@@ -35,33 +58,73 @@ class AirportsBrazil {
             
             let airportResult = (dict.valueForKey(CITY) as! NSArray).objectAtIndex(i)
             
+            //let id:Int = airportResult.valueForKey(ID) as! Int
             let cityName:String = airportResult.valueForKey(CITY_NAME) as! String
             let stateName:String = airportResult.valueForKey(STATE_NAME) as! String
             let airportName:String = airportResult.valueForKey(AIRPORT_NAME) as! String
             //let airportInitials:String = airportResult.valueForKey(AIRPORT_INITIALS) as! String
             
-            let airport: Airport = Airport(cityName: cityName, airportName: airportName, airportInitials: nil, stateName: stateName)
+            //let airport: Airport = Airport(id: id, cityName: cityName, airportName: airportName, airportInitials: nil, stateName: stateName)
             
-            let cityNameFirstLetter = "\(cityName.characters.first!)"
+            let airport: Airport = Airport()
+            airport.city_name = cityName
+            airport.state_name = stateName
+            airport.airport_name = airportName
             
-            var listOfAirports: [Airport] = []
+            airports.insert(airport)
             
-            if let list = self.airports[cityNameFirstLetter] {
-                listOfAirports = list
-            }else {
-                keys.append(cityNameFirstLetter)
-            }
+            //if !AirportDAO.insert(airport) {
+            //    print("Error: ")
+            //    return
+            //}
             
-            listOfAirports.append(airport)
+            //let cityNameFirstLetter = "\(cityName.characters.first!)"
             
-            self.airports[cityNameFirstLetter] = listOfAirports
+            //var listOfAirports: [Airport] = []
+            
+            //if let list = self.airports[cityNameFirstLetter] {
+            //    listOfAirports = list
+            //}else {
+            //    keys.append(cityNameFirstLetter)
+            //}
+            
+            //listOfAirports.append(airport)
+            
+            //self.airports[cityNameFirstLetter] = listOfAirports
             
         }
 
     }
     
+    func getAllAirports(var airports: Set<Airport>) {
+        let path: NSString = NSBundle.mainBundle().pathForResource("airportsBrazil", ofType: "json")!
+        let data: NSData = try! NSData(contentsOfFile: path as String, options: NSDataReadingOptions.DataReadingMapped)
+        
+        let dict: NSDictionary! = (try! NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)) as! NSDictionary
+        
+        for var i = 0 ; i < (dict.valueForKey(CITY) as! NSArray).count; i++ {
+            
+            let airportResult = (dict.valueForKey(CITY) as! NSArray).objectAtIndex(i)
+            
+            //let id:Int = airportResult.valueForKey(ID) as! Int
+            let cityName:String = airportResult.valueForKey(CITY_NAME) as! String
+            let stateName:String = airportResult.valueForKey(STATE_NAME) as! String
+            let airportName:String = airportResult.valueForKey(AIRPORT_NAME) as! String
+            //let airportInitials:String = airportResult.valueForKey(AIRPORT_INITIALS) as! String
+            
+            //let airport: Airport = Airport(id: id, cityName: cityName, airportName: airportName, airportInitials: nil, stateName: stateName)
+            
+            let airport: Airport = Airport()
+            airport.city_name = cityName
+            airport.state_name = stateName
+            airport.airport_name = airportName
+            
+            airports.insert(airport)
+            
+        }
+    }
     
-    func getAirports() -> [String : [Airport]] {
+    /*func getAirports() -> [String : [Airport]] {
         return self.airports
     }
     
@@ -75,7 +138,11 @@ class AirportsBrazil {
         return self.airports[key]
     }
     
-    func numberOfSections() -> Int {
+    func getAllAirports() -> [Airport]? {
+        return self.airports.
+    }*/
+    
+   /* func numberOfSections() -> Int {
         return keys.count
     }
     
@@ -90,5 +157,11 @@ class AirportsBrazil {
         
         return list.count
     }
+    
+    func getAirportWithId(id: Int) {
+        for airport: [Airport] in self.airports.enumerate() {
+            airport.first
+        }
+    }*/
     
 }

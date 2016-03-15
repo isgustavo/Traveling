@@ -11,13 +11,13 @@ import UIKit
 class FlightTableViewCell: UITableViewCell {
 
     @IBOutlet weak var icon: UIImageView!
-
     @IBOutlet weak var date: UILabel!
-    
     @IBOutlet weak var airport: UILabel!
-
     @IBOutlet weak var city: UILabel!
-    
+    @IBOutlet weak var airline: UILabel!
     @IBOutlet weak var locator: UILabel!
+    @IBOutlet weak var arrivalDate: UILabel!
+    @IBOutlet weak var arrivalAirport: UILabel!
+    @IBOutlet weak var arrivalCity: UILabel!
     
 }

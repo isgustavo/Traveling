@@ -7,11 +7,28 @@
 //
 
 import Foundation
+import CoreData
 
-
-class Flight: Travel {
+class Flight: NSManagedObject  {
     
-    private var departureAirport: Airport?
+    
+    // The designated initializer
+    convenience init()
+    {
+        // get context
+        let context: NSManagedObjectContext = DatabaseManager.sharedInstance.managedObjectContext
+        
+        // create entity description
+        let entityDescription: NSEntityDescription? = NSEntityDescription.entityForName("Flight", inManagedObjectContext: context)
+        
+        // call super using
+        self.init(entity: entityDescription!, insertIntoManagedObjectContext: context)
+    }
+
+    
+    
+    
+   /* private var departureAirport: Airport?
     private var dateHour: NSDate!
     private var arrivalAirport: Airport?
     private var number: String?
@@ -61,5 +78,13 @@ class Flight: Travel {
             return false
         }
     }
+    
+    func remove() {
+        self.departureAirport = nil
+        self.dateHour = NSDate()
+        self.arrivalAirport = nil
+        self.number = nil
+    }
+*/
 
 }

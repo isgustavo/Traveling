@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Hotel {
+class Hotel: Travel {
 
     private var name: String?
     private var address: String?

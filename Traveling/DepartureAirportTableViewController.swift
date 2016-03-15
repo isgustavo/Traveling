@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import CoreData
+//import CoreData
 
 class DepartureAirportTableViewController: AirportTableViewController, AirportSearchTableViewDelegate {
-    
+
     // MARK - App Lifecycle
     
     override func viewDidLoad() {
@@ -31,8 +31,9 @@ class DepartureAirportTableViewController: AirportTableViewController, AirportSe
     }
 
     override func airportSelected(selected: Airport) {
-
-        Flight.sharedInstance.setDepartureAirport(selected)
+        
+        delegate?.selectedAirport(selected, departure: true)
+        
         self.navigationController!.popViewControllerAnimated(true)
         
     }

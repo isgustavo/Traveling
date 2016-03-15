@@ -30,7 +30,8 @@ class ArrivalAirportTableViewController: AirportTableViewController, AirportSear
 
     override func airportSelected(selected: Airport) {
         
-        Flight.sharedInstance.setArrivalAirport(selected)
+        delegate?.selectedAirport(selected, departure: false)
+        
         self.navigationController!.popViewControllerAnimated(true)
     }
     
