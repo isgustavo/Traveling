@@ -30,12 +30,21 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
         self.navigationItem.rightBarButtonItems = [newFlightButton, newHotelButton]
         
         self.title = "TRAVELS"
-        self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
         
-        //let logoImage:UIImage = UIImage(named: "travels")!
-        //self.navigationItem.titleView = UIImageView(image: logoImage)
+        let shadow: NSShadow = NSShadow()
+        shadow.shadowColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.8)
+        shadow.shadowOffset = CGSizeMake(0, 2)
         
-        //self.navigationController!.navigationItem.titleView = UIVIew UIImage(named: "travels")
+        let attributes = [
+            NSForegroundColorAttributeName: UIColor(red: 245.0/255.0, green: 245.0/255.0, blue: 245.0/255.0, alpha: 1.0),
+            NSFontAttributeName: UIFont(name: "HelveticaNeue-Medium", size: 17)!,
+            NSShadowAttributeName: shadow
+        ]
+        
+        self.navigationController?.navigationBar.titleTextAttributes = attributes
+        
+        self.navigationController?.navigationBar.barTintColor = AppColors.PURPLE_COLOR
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
 
     }
     
@@ -57,18 +66,25 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     func flightButtonPressed(sender: AnyObject?) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newFlightTableViewController: NewFlightTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewFlightTableViewControllerId") as! NewFlightTableViewController
-        
-        self.navigationController!.pushViewController(newFlightTableViewController, animated: true)
+        let newFlight: AddFlightController = storyBoard.instantiateViewControllerWithIdentifier("AddFlightControllerId") as! AddFlightController
+        newFlight.update = false
+        self.navigationController!.pushViewController(newFlight, animated: true)
         
     }
     
     func hotelButtonPressed(sender: AnyObject) {
         
+        
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newHotelTableViewController: NewHotelTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewHotelTableViewControllerId") as! NewHotelTableViewController
+        let newHotelTableViewController: AddFlightController = storyBoard.instantiateViewControllerWithIdentifier("AddFlightControllerId") as! AddFlightController
         
         self.navigationController!.pushViewController(newHotelTableViewController, animated: true)
+        
+        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let newHotelTableViewController: NewHotelTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewHotelTableViewControllerId") as! NewHotelTableViewController
+        
+        //self.navigationController!.pushViewController(newHotelTableViewController, animated: true)
 
     }
 
@@ -95,14 +111,14 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
             let cell = tableView.dequeueReusableCellWithIdentifier("flightCellIdentifier", forIndexPath: indexPath) as! FlightTableViewCell
             let flight = travels[indexPath.row] as! Flight
             
-            cell.date.text = "\(flight.data_hour)"
-            cell.airport.text = flight.departure_relationship?.airport_name
-            cell.city.text = flight.departure_relationship?.city_name
+            //cell.date.text = "\(flight.data_hour)"
+            //cell.airport.text = flight.departure_relationship?.airport_name
+            //cell.city.text = flight.departure_relationship?.city_name
             cell.airline.text = AirlineBrazil.sharedInstance.getAirline(indexPath.row)
-            cell.locator.text = flight.locator
-            cell.arrivalDate.text = "\(flight.data_hour)"
-            cell.arrivalAirport.text = flight.arrival_relationship?.airport_name
-            cell.arrivalAirport.text = flight.arrival_relationship?.city_name
+            //cell.locator.text = flight.locator
+            //cell.arrivalDate.text = "\(flight.data_hour)"
+            //cell.arrivalAirport.text = flight.arrival_relationship?.airport_name
+            //cell.arrivalAirport.text = flight.arrival_relationship?.city_name
             return cell
         }
         

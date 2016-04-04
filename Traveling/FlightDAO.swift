@@ -50,7 +50,7 @@ class FlightDAO {
     static func fetchAllFlight() -> [Flight] {
         
         let request = NSFetchRequest(entityName: "Flight")
-        request.sortDescriptors = [NSSortDescriptor(key: "data_hour", ascending:true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "dataHour", ascending:true)]
 
         var results = [Flight]()
         

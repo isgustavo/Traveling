@@ -27,6 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AirportDAO.insertAll()
         }
         
+        let airline: [Airline] = AirlineDAO.fetchAll()
+        if airline.count == 0 {
+            AirlineDAO.insertAll()
+        }
+        
         return true
     }
 

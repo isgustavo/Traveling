@@ -24,67 +24,16 @@ class Flight: NSManagedObject  {
         // call super using
         self.init(entity: entityDescription!, insertIntoManagedObjectContext: context)
     }
+    
+    func valid() -> Bool {
 
-    
-    
-    
-   /* private var departureAirport: Airport?
-    private var dateHour: NSDate!
-    private var arrivalAirport: Airport?
-    private var number: String?
-    
-    static let sharedInstance = Flight()
-    
-    private init() {
-        self.dateHour = NSDate()
-    }
-    
-    func getDepartureAirport() -> Airport? {
-        return self.departureAirport
-    }
-    
-    func setDepartureAirport(airport: Airport) {
-        self.departureAirport = airport
-    }
-    
-    func getDateHour() -> NSDate {
-        return self.dateHour
-    }
-    
-    func setDateHour(dateHour: NSDate) {
-        self.dateHour = dateHour
-    }
-    
-    func getArrivalAirport() -> Airport? {
-        return self.arrivalAirport
-    }
-    
-    func setArrivalAirport(airport: Airport) {
-        self.arrivalAirport = airport
-    }
-    
-    func getNumber() -> String? {
-        return number
-    }
-    
-    func setNumber(number: String?) {
-        self.number = number;
-    }
-    
-    func completed() -> Bool{
-        if self.departureAirport != nil && self.arrivalAirport != nil && self.number != nil  && self.number != ""{
-           return true
-        }else {
+        if departureAirport == nil
+            || arrivalAirport == nil
+                || reservationCode == nil
+                    || airline == nil {
             return false
+        } else {
+            return true
         }
     }
-    
-    func remove() {
-        self.departureAirport = nil
-        self.dateHour = NSDate()
-        self.arrivalAirport = nil
-        self.number = nil
-    }
-*/
-
 }

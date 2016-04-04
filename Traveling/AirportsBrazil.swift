@@ -9,26 +9,7 @@
 import Foundation
 import CoreData
 
-class AirlineBrazil {
-    
-    static let sharedInstance = AirlineBrazil()
-    private var airlines: [String] = []
-    
-    private init(){
-        airlines.append("Avianca Brasil")
-        airlines.append("Azul Linhas Aéreas Brasileiras")
-        airlines.append("Gol Transportes Aéreos")
-        airlines.append("TAM Linhas Aéreas")
-    }
-    
-    func getAirline(row: Int) -> String {
-        return self.airlines[row]
-    }
-    
-    func getAirlines() -> [String] {
-        return self.airlines
-    }
-}
+
 
 class AirportsBrazil {
     
