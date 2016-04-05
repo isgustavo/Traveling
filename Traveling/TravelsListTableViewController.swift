@@ -73,19 +73,12 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     }
     
     func hotelButtonPressed(sender: AnyObject) {
-        
-        
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newHotelTableViewController: AddFlightController = storyBoard.instantiateViewControllerWithIdentifier("AddFlightControllerId") as! AddFlightController
-        
-        self.navigationController!.pushViewController(newHotelTableViewController, animated: true)
-        
-        //let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        //let newHotelTableViewController: NewHotelTableViewController = storyBoard.instantiateViewControllerWithIdentifier("NewHotelTableViewControllerId") as! NewHotelTableViewController
-        
-        //self.navigationController!.pushViewController(newHotelTableViewController, animated: true)
 
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newHotel: AddHotelController = storyBoard.instantiateViewControllerWithIdentifier("AddHotelControllerId") as! AddHotelController
+        newHotel.update = false
+        self.navigationController!.pushViewController(newHotel, animated: true)
+        
     }
 
     // MARK: - Table view data source
@@ -95,7 +88,7 @@ class TravelsListTableViewController: UITableViewController, NSFetchedResultsCon
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return travels.count
+        return 1//travels.count
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

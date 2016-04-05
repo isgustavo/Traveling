@@ -1,8 +1,8 @@
 //
-//  AirportDAO.swift
+//  HotelDAO.swift
 //  Traveling
 //
-//  Created by Gustavo F Oliveira on 3/14/16.
+//  Created by Gustavo F Oliveira on 4/4/16.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -16,49 +16,56 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-import Foundation
+import UIKit
 import CoreData
 
-class AirportDAO {
-    
+class HotelDAO {
+
     // insert new object
-    static func insert(airport: Airport) -> Bool{
-        DatabaseManager.sharedInstance.managedObjectContext.insertObject(airport)
+    static func insert(hotel: Hotel) {
+        DatabaseManager.sharedInstance.managedObjectContext.insertObject(hotel)
         
         do {
             try DatabaseManager.sharedInstance.managedObjectContext.save()
-            return true
             
         } catch let error as NSError {
             print("Erro ao inserir tarefa: ", error)
-            return false
         }
     }
     
-    static func insertAll() -> Bool {
-        
-        let airports = DatabaseManager.sharedInstance.managedObjectContext.insertedObjects as! Set<Airport>
-        AirportsBrazil.sharedInstance.getAllAirports(airports)
-
+    // update existing object
+    static func update(hotel: Hotel) {
         do {
             try DatabaseManager.sharedInstance.managedObjectContext.save()
-            return true
             
         } catch let error as NSError {
-            print("Erro ao inserir tarefa: ", error)
-            return false
+            print("Erro ao alterar tarefa: ", error)
         }
+    }
+    
+    // delete object
+    static func delete(hotel: Hotel) {
+        DatabaseManager.sharedInstance.managedObjectContext.deleteObject(hotel)
+        
+        do {
+            try DatabaseManager.sharedInstance.managedObjectContext.save()
+            
+        } catch let error as NSError {
+            print("Erro ao deletar tarefa:", error)
+        }
+        
     }
     
     // fetch all existing objects
-    static func fetchAll() -> [Airport] {
+    static func fetchAllHotel() -> [Hotel] {
         
-        let request = NSFetchRequest(entityName: "Airport")
+        let request = NSFetchRequest(entityName: "Hotel")
+        request.sortDescriptors = [NSSortDescriptor(key: "checkIInDate", ascending:true)]
         
-        var results = [Airport]()
+        var results = [Hotel]()
         
         do {
-            results = try DatabaseManager.sharedInstance.managedObjectContext.executeFetchRequest(request) as! [Airport]
+            results = try DatabaseManager.sharedInstance.managedObjectContext.executeFetchRequest(request) as! [Hotel]
             
         } catch let error as NSError {
             print("Erro ao buscar tarefas:", error)
@@ -66,6 +73,5 @@ class AirportDAO {
         
         return results
     }
-    
-}
 
+}

@@ -17,14 +17,14 @@
     </entity>
     <entity name="Hotel" representedClassName=".Hotel" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="check_in_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="checkIInDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Airline" positionX="9" positionY="-27" width="128" height="60"/>
         <element name="Airport" positionX="133" positionY="99" width="128" height="90"/>
         <element name="Flight" positionX="-108" positionY="6" width="128" height="120"/>
         <element name="Hotel" positionX="16" positionY="-177" width="128" height="105"/>
-        <element name="Airline" positionX="9" positionY="-27" width="128" height="60"/>
     </elements>
 </model>

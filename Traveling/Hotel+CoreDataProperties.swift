@@ -1,8 +1,8 @@
 //
-//  Airline+CoreDataProperties.swift
+//  Hotel+CoreDataProperties.swift
 //  Traveling
 //
-//  Created by Gustavo F Oliveira on 4/1/16.
+//  Created by Gustavo F Oliveira on 4/4/16.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -19,8 +19,11 @@
 import Foundation
 import CoreData
 
-extension Airline {
+extension Hotel {
 
-    @NSManaged var airlineName: String?
+    @NSManaged var address: String?
+    @NSManaged var checkIInDate: NSDate?
+    @NSManaged var name: String?
+    @NSManaged var phone: String?
 
 }

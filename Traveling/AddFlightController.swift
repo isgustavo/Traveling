@@ -235,10 +235,10 @@ class AddFlightController: UITableViewController, AirportSearchTableViewDelegate
             }
             
         case 2:
-            cell = tableView.dequeueReusableCellWithIdentifier("reservationCodeCell", forIndexPath: indexPath) as! ReservationCodeCell
+            cell = tableView.dequeueReusableCellWithIdentifier("rightTextCell", forIndexPath: indexPath) as! RightTextCell
             
-            if let c = cell as? ReservationCodeCell {
-                c.reservationCode.delegate = self
+            if let c = cell as? RightTextCell {
+                c.txt.delegate = self
             }
             
         case 3:

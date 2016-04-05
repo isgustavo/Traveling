@@ -1,8 +1,8 @@
 //
-//  LocatorCell.swift
+//  HotelCell.swift
 //  Traveling
 //
-//  Created by Gustavo F Oliveira on 3/31/16.
+//  Created by Gustavo F Oliveira on 4/3/16.
 //
 //   Licensed under the Apache License, Version 2.0 (the "License");
 //   you may not use this file except in compliance with the License.
@@ -19,19 +19,19 @@
 
 import UIKit
 
-class ReservationCodeCell: UITableViewCell {
+class RightTextCell: UITableViewCell {
 
-    @IBOutlet weak var reservationCode: UITextField!
+    @IBOutlet weak var txt: UITextField!
     
     override func awakeFromNib() {
-
-        self.reservationCode.autocapitalizationType = UITextAutocapitalizationType.AllCharacters
+        
+        self.txt.autocapitalizationType = UITextAutocapitalizationType.AllCharacters
     }
-
+    
     override func didTransitionToState(state: UITableViewCellStateMask) {
-        self.reservationCode.enabled = state.contains(.ShowingEditControlMask)
+        self.txt.enabled = state.contains(.ShowingEditControlMask)
         super.didTransitionToState(state)
         
     }
-    
+
 }

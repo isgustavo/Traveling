@@ -2,68 +2,46 @@
 //  Hotel.swift
 //  Traveling
 //
-//  Created by gustavo.freitas2 on 3/13/16.
-//  Copyright © 2016 Pé de pano. All rights reserved.
+//  Created by Gustavo F Oliveira on 4/3/16.
 //
-
+//   Licensed under the Apache License, Version 2.0 (the "License");
+//   you may not use this file except in compliance with the License.
+//   You may obtain a copy of the License at
+//
+//       http://www.apache.org/licenses/LICENSE-2.0
+//
+//   Unless required by applicable law or agreed to in writing, software
+//   distributed under the License is distributed on an "AS IS" BASIS,
+//   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//   See the License for the specific language governing permissions and
+//   limitations under the License.
 import Foundation
+import CoreData
 
-class Hotel: Travel {
 
-    private var name: String?
-    private var address: String?
-    private var phone: String?
-    private var checkInDate: NSDate?
-    
-    static let sharedInstance = Hotel()
-    
-    private init() {
-        self.checkInDate = NSDate()
+class Hotel: NSManagedObject {
+
+    convenience init() {
+        
+        // get context
+        let context: NSManagedObjectContext = DatabaseManager.sharedInstance.managedObjectContext
+        
+        // create entity description
+        let entityDescription: NSEntityDescription? = NSEntityDescription.entityForName("Hotel", inManagedObjectContext: context)
+        
+        // call super using
+        self.init(entity: entityDescription!, insertIntoManagedObjectContext: context)
     }
     
-    func getName() -> String? {
-        return self.name
-    }
-    
-    func setName(name: String) {
-        self.name = name
-    }
-    
-    func getAddress() -> String? {
-        return self.address
-    }
-    
-    func setAddress(address: String) {
-        self.address = address
-    }
-    
-    func getPhone() -> String? {
-        return self.phone
-    }
-    
-    func setPhone(phone: String) {
-        self.phone = phone
-    }
-    
-    func getCheckInDate() -> NSDate? {
-        return self.checkInDate
-    }
-    
-    func setCheckInDate(date: NSDate) {
-        self.checkInDate = date
-    }
-    
-    func completed() -> Bool{
-        if self.name != nil && self.name != ""
-            && self.address != nil && self.address != ""
-            && self.phone != nil  && self.phone != "" {
-            return true
-        }else {
+    func valid() -> Bool {
+        
+        if name == nil
+            || address == nil
+            || phone == nil {
             return false
+        } else {
+            return true
         }
     }
 
-    
-    
-    
 }
